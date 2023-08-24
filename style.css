@@ -441,9 +441,10 @@ nav{
 	top: 0;
 	height: 70px;
 	width: 100%;
-	background: var(--black);
+	background: #161616C0;
 	font-size: 14px;
 	z-index: 100;
+	backdrop-filter: blur(25px);
 }
 
 .navLogo{
@@ -486,6 +487,18 @@ header{
 	height: 100%;
 	width: 100%;
 	object-fit: contain;
+}
+
+
+
+.divider{
+	font-size: 24px;
+	margin-left: -40px;
+	padding: 6px 0 10px 0;
+	white-space: nowrap;
+	overflow: hidden;
+	color: var(--black);
+	background: var(--accent);
 }
 
 
