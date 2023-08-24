@@ -1,0 +1,47 @@
+@font-face {
+	font-family: "Campeche Light";
+	src: url("./fonts/Campeche-Light.otf") format("opentype");
+}
+@font-face {
+	font-family: "Campeche Regular";
+	src: url("./fonts/Campeche-Regular.otf") format("opentype");
+}
+@font-face {
+	font-family: "Campeche Medium";
+	src: url("./fonts/Campeche-Medium.otf") format("opentype");
+}
+@font-face {
+	font-family: "Campeche Bold";
+	src: url("./fonts/Campeche-Bold.otf") format("opentype");
+}
+
+
+@font-face {
+	font-family: "Campeche-Display Regular";
+	src: url("./fonts/CampecheDisplay-Regular.otf") format("opentype");
+}
+@font-face {
+	font-family: "Campeche-Display Medium";
+	src: url("./fonts/CampecheDisplay-Medium.otf") format("opentype");
+}
+
+
+.light{
+	font-family: "Campeche Light", sans-serif;
+}
+.regular{
+	font-family: "Campeche Regular", sans-serif;
+}
+.medium{
+	font-family: "Campeche Medium", sans-serif;
+}
+.bold{
+	font-family: "Campeche Bold", sans-serif;
+}
+
+.disRegular{
+	font-family: "Campeche-Display Regular", sans-serif;
+}
+.disMedium{
+	font-family: "Campeche-Display Medium", sans-serif;
+}
