@@ -76,6 +76,12 @@
 		padding-bottom: 5px;
 	}
 
+	.m-marginT25{
+		margin-top: 25px;
+	}
+	.m-marginB25{
+		margin-bottom: 25px;
+	}
 	.m-marginB30{
 		margin-bottom: 30px;
 	}
@@ -85,6 +91,13 @@
 		padding: 4px 8px;
 		font-size: 8px;
 	}
+
+
+	header{
+		background: linear-gradient(#16161682, #161616D9, #161616), url('./images/propic.png');
+		background-size: cover;
+	}
+
 
 	button{
 		padding: 5px 10px;
@@ -113,6 +126,10 @@
 
 	.socialCard h1 {
 		font-size: 18px;
+	}
+
+	footer p{
+		font-size: 14px;
 	}
 
 }
