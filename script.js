@@ -1,6 +1,6 @@
 const button = document.getElementById("resumeBtn");
 button.addEventListener("click", function () {
-	const url = "./docs/resume.pdf";
+	const url = "./resume.pdf";
 	const filename = "Resume - Sandun Wiratunga.pdf";
 	downloadFile(url, filename);
 });
