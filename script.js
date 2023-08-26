@@ -1,27 +1,3 @@
-const button = document.getElementById("resumeBtn");
-button.addEventListener("click", function () {
-	const url = "/assets/documents/CV.pdf";
-	const filename = "Resume - Sandun Wiratunga.pdf";
-	downloadFile(url, filename);
-});
-
-function downloadFile(url, filename) {
-	var xhr = new XMLHttpRequest();
-	xhr.open("GET", url, true);
-	xhr.responseType = "blob";
-	xhr.onload = function () {
-		var blob = xhr.response;
-		var a = document.createElement("a");
-		a.href = window.URL.createObjectURL(blob);
-		a.download = filename;
-		document.body.appendChild(a);
-		a.click();
-	};
-	xhr.send();
-}
-
-
-
 window.addEventListener("load", function () {
 	const form = document.getElementById('messageForm');
 	form.addEventListener("submit", function (e) {
