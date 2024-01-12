@@ -1,0 +1,135 @@
+@media (max-width: 500px) {
+
+	.m500-noDisplay{
+		display: none;
+	}
+	.m500-width100{
+		width: 100%;
+	}
+
+}
+
+
+
+@media (max-width: 1048px) {
+
+	.m-flexColReverse{
+		flex-direction: column-reverse;
+	}
+	.m-flexCol{
+		flex-direction: column;
+	}
+	.m-flexRow{
+		flex-direction: row;
+	}
+
+	.m-justifyCenter{
+		justify-content: center;
+	}
+
+	.m-gap20{
+		gap: 20px;
+	}
+	.m-gap50{
+		gap: 50px;
+	}
+
+	.m-noDisplay{
+		display: none;
+	}
+
+
+	.m-height80{
+		height: 80%;
+	}
+	.m-height100{
+		height: 100%;
+	}
+
+	.m-width30{
+		width: 30%;
+	}
+	.m-width40{
+		width: 40%;
+	}
+	.m-width60{
+		width: 60%;
+	}
+	.m-width85{
+		width: 85%;
+	}
+	.m-width95{
+		width: 95%;
+	}
+	.m-width100{
+		width: 100%;
+	}
+
+
+	.m-lineH17{
+		line-height: 1.7;
+	}
+
+
+	.container{
+		padding-top: 55px;
+		padding-bottom: 5px;
+	}
+
+	.m-marginT25{
+		margin-top: 25px;
+	}
+	.m-marginB25{
+		margin-bottom: 25px;
+	}
+	.m-marginB30{
+		margin-bottom: 30px;
+	}
+
+
+	nav button{
+		padding: 4px 8px;
+		font-size: 8px;
+	}
+
+
+	header{
+		background: linear-gradient(#16161682, #161616D9, #161616), url('https://i.postimg.cc/rsTCqMt9/propic.webp');
+		background-size: cover;
+	}
+
+
+	button{
+		padding: 5px 10px;
+		font-size: 12px;
+	}
+
+	.headerHeading {
+		font-size: 60px;
+	}
+
+	.divider{
+		font-size: 10px;
+	}
+
+	.linkCard h2{
+		font-size: 12px;
+	}
+
+	.formBox{
+		height: auto;
+	}
+	.formContent{
+		border-radius: 10px;
+		padding: 25px 0;
+	}
+
+	.socialCard h1 {
+		font-size: 18px;
+	}
+
+	footer p{
+		font-size: 14px;
+	}
+
+}

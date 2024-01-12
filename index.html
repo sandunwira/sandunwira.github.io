@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GM9T435SFG"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-GM9T435SFG');
+	</script>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#CD3131">
+
+	<!-- Meta Tags Start =================================================================================-->
+	<meta name="title" content="Sandun Wiratunga - Portfolio">
+	<meta name="description" content="Hey There! I'm Sandun Wiratunga, a Software Engineering Undergraduate who has a passion in UI/UX Design, Graphic Design and Web Development. Welcome to my personal website!">
+	<!-- Open Graph -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="Sandun Wiratunga - Portfolio">
+	<meta property="og:description" content="Hey There! I'm Sandun Wiratunga, a Software Engineering Undergraduate who has a passion in UI/UX Design, Graphic Design and Web Development. Welcome to my personal website!">
+	<meta property="og:image" content="https://i.postimg.cc/JhGS2GXR/preview.jpg">
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:url" content="">
+	<meta name="twitter:title" content="Sandun Wiratunga - Portfolio">
+	<meta name="twitter:description" content="Hey There! I'm Sandun Wiratunga, a Software Engineering Undergraduate who has a passion in UI/UX Design, Graphic Design and Web Development. Welcome to my personal website!">
+	<meta name="twitter:image" content="https://i.postimg.cc/JhGS2GXR/preview.jpg">
+	<!--=================================================================================== Meta Tags End -->
+
+	<title>Sandun Wiratunga - Portfolio</title>
+
+	<link rel="stylesheet" href="fonts.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="mobile.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+	<link rel="preload" href="fonts.css" as="style" type="text/css">
+	<link rel="preload" href="style.css" as="style" type="text/css">
+	<link rel="preload" href="mobile.css" as="style" type="text/css">
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" type="text/css" crossorigin>
+	<link rel="preload" href="./fonts/Campeche-Light.otf" as="font" type="font/otf" crossorigin>
+	<link rel="preload" href="./fonts/Campeche-Regular.otf" as="font" type="font/otf" crossorigin>
+	<link rel="preload" href="./fonts/Campeche-Medium.otf" as="font" type="font/otf" crossorigin>
+	<link rel="preload" href="./fonts/Campeche-Bold.otf" as="font" type="font/otf" crossorigin>
+	<link rel="preload" href="./fonts/CampecheDisplay-Regular.otf" as="font" type="font/otf" crossorigin>
+	<link rel="preload" href="./fonts/CampecheDisplay-Medium.otf" as="font" type="font/otf" crossorigin>
+
+	<link rel="icon" href="https://i.postimg.cc/br0TXKGt/favicon.png">
+</head>
+
+<body>
+
+	<nav class="flex flexRow">
+		<div class="flex flexRow justifyEvenly height100 width100">
+			<div class="navLogo flex height100 width20" onclick="document.getElementById('headerSection').scrollIntoView();">
+				<img src="./images/logo.svg">
+			</div>
+
+			<div class="flex justifyStart height100 width70 m-width40">
+				<span class="light" onclick="document.getElementById('resumeSection').scrollIntoView();">RESUME</span>
+			</div>
+
+			<div class="flex height100">
+				<button class="redBtn" onclick="document.getElementById('contactSection').scrollIntoView();">Get In Touch</button>
+			</div>
+		</div>
+	</nav>
+
+
+
+	<header class="flex flexCol justifyEnd" id="headerSection">
+		<div class="flex flexRow justifyBetween alignEnd height100 width100">
+
+			<div class="flex width60 marginB40 m-width100">
+				<div class="flex flexCol height100 width85 gap40">
+					<h1 class="headerHeading lineH10 disMedium width100">Sandun<br>
+						<span class="light">Wiratunga</span>
+					</h1>
+
+					<p class="textJustify lineH16 m-lineH17 width100">Hey There! I'm Sandun Wiratunga, a Software Engineering Undergraduate who has a passion in UI/UX Design, Graphic Design and Web Development. Welcome to my personal website!</p>
+
+					<div class="width100">
+						<button class="redBtn" onclick="document.getElementById('aboutSection').scrollIntoView();">Explore</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="proPic flex width40 m-noDisplay">
+				<img src="https://i.postimg.cc/rsTCqMt9/propic.webp">
+			</div>
+
+		</div>
+	</header>
+
+
+
+	<div class="divider bold">
+		UI/UX DESIGN • GRAPHIC DESIGN • WEB DEVELOPMENT • UI/UX DESIGN • GRAPHIC DESIGN • WEB DEVELOPMENT • UI/UX DESIGN • GRAPHIC DESIGN • WEB DEVELOPMENT • UI/UX DESIGN • GRAPHIC DESIGN • WEB DEVELOPMENT • UI/UX DESIGN • GRAPHIC DESIGN • WEB DEVELOPMENT
+	</div>
+
+
+
+	<div class="containerBlock flex" id="aboutSection">
+
+		<div class="container flex flexCol">
+
+			<h1 class="heading disRegular width100">About Me</h1>
+
+			<div class="flex flexRow justifyBetween alignStart width100 marginT10 marginB15 m-marginB30">
+				<h1 class="subHeading regular width50 m500-width100">I will deliver results that surpass your expectations.</h1>
+
+				<div class="cubeImg m500-noDisplay">
+					<img src="./images/cube.png">
+				</div>
+			</div>
+
+			<div class="flex justifyStart width100 marginB50 m-marginB30">
+				<button class="redBtn regular" onclick="document.getElementById('contactSection').scrollIntoView();">Hire Me <i class="fa-solid fa-chevron-right"></i></button>
+			</div>
+
+			<div class="flex flexRow alignStart justifyBetween width100">
+
+				<div class="cubeLargeImg flex width40 m-noDisplay">
+					<img src="./images/cube-large.png">
+				</div>
+
+				<div class="flex flexCol width60 m-width100">
+					<p class="textJustify lineH16 m-lineH17 marginB20">Hi, I'm Sandun Wiratunga, a Software Engineering Undergraduate with a passion for UI/UX Design, Graphic Design, and Web Development. I'm always looking for interesting and meaningful projects to work on, and I take pride in my work. I'm committed to producing high-quality code, design, and development, and I always strive to optimize my work.</p>
+
+					<div class="aboutCounter flex flexRow width100 justifyStart m-gap50 m-justifyCenter">
+						<div class="flex flexCol width10 marginR30">
+							<h1 class="medium">
+								9<span class="redText">+</span>
+							</h1>
+
+							<p class="light textCenter lineH11">Completed Projects</p>
+						</div>
+
+						<div class="flex flexCol width10">
+							<h1 class="medium">
+								5<span class="redText">+</span>
+							</h1>
+
+							<p class="light textCenter lineH11">Years Experience</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+	<div class="containerBlock flex">
+
+		<div class="container flex flexCol">
+
+			<h1 class="heading disRegular width100">My Works</h1>
+
+			<div class="flex flexRow justifyBetween alignStart width100 marginT10 marginB50 m-marginB30">
+				<h1 class="subHeading regular width50 m500-width100">Some of my finished and ongoing projects,</h1>
+
+				<div class="cubeImg m500-noDisplay">
+					<img src="./images/cube.png">
+				</div>
+			</div>
+
+			<div class="flex flexCol gap15 width100">
+				<a class="flex width100" href="https://github.com/sandunwira/SupTube" target="_blank">
+					<div class="linkCard flex justifyBetween width100">
+						<div class="linkLogo flex m-noDisplay">
+							<img src="https://i.postimg.cc/Ss4bCN77/suptube.png">
+						</div>
+
+						<div class="flex textLeft width80 m-width60">
+							<h1 class="regular width100">SupTube</h1>
+						</div>
+
+						<div class="flex textLeft width20 m-width40">
+							<h2 class="light textRight width100">View Project <i class="fa-solid fa-square-arrow-up-right"></i></h2>
+						</div>
+					</div>
+				</a>
+
+				<a class="flex width100" href="https://github.com/sandunwira/TwitchBox" target="_blank">
+					<div class="linkCard flex justifyBetween width100">
+						<div class="linkLogo flex m-noDisplay">
+							<img src="https://i.postimg.cc/RFT5R5gr/twitchbox.png">
+						</div>
+
+						<div class="flex textLeft width80 m-width60">
+							<h1 class="regular width100">TwitchBox</h1>
+						</div>
+
+						<div class="flex textLeft width20 m-width40">
+							<h2 class="light textRight width100">View Project <i class="fa-solid fa-square-arrow-up-right"></i></h2>
+						</div>
+					</div>
+				</a>
+
+				<a class="flex width100" href="https://github.com/teamkoolapps/Lumina" target="_blank">
+					<div class="linkCard flex justifyBetween width100">
+						<div class="linkLogo flex m-noDisplay">
+							<img src="https://i.postimg.cc/7hBFF1vm/lumina.png">
+						</div>
+
+						<div class="flex textLeft width80 m-width60">
+							<h1 class="regular width100">Lumina</h1>
+						</div>
+
+						<div class="flex textLeft width20 m-width40">
+							<h2 class="light textRight width100">View Project <i class="fa-solid fa-square-arrow-up-right"></i></h2>
+						</div>
+					</div>
+				</a>
+
+				<a class="flex marginB40 width100" href="https://github.com/sjccolombo/sjccolombo" target="_blank">
+					<div class="linkCard flex justifyBetween width100">
+						<div class="linkLogo flex m-noDisplay">
+							<img src="https://i.postimg.cc/W4gPdJr1/sjccolombo.png">
+						</div>
+
+						<div class="flex textLeft width80 m-width60">
+							<h1 class="regular width100">SJCColombo</h1>
+						</div>
+
+						<div class="flex textLeft width20 m-width40">
+							<h2 class="light textRight width100">View Project <i class="fa-solid fa-square-arrow-up-right"></i></h2>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="flex width100">
+				<a href="https://github.com/sandunwira" target="_blank">
+					<button class="redBtn regular">View More On GitHub <i class="fa-solid fa-square-arrow-up-right"></i></button>
+				</a>
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+	<div class="containerBlock flex">
+
+		<div class="container flex flexCol">
+
+			<h1 class="heading disRegular width100">My Services</h1>
+
+			<div class="flex flexRow justifyBetween alignStart width100 marginT10 marginB50 m-marginB30">
+				<h1 class="subHeading regular width50 m500-width100">Available services that I can and will work on,</h1>
+
+				<div class="cubeImg m500-noDisplay">
+					<img src="./images/cube.png">
+				</div>
+			</div>
+
+			<div class="flex flexCol gap15 width100">
+
+				<details class="serviceLink flex width100">
+					<summary class="serviceCard flex justifyBetween width95 m-width85">
+						UI/UX Design <i class="fa-solid fa-chevron-down"></i>
+					</summary>
+					<div class="serviceDesc width95 m-width85">
+						<ul>
+							<li>Visual Design</li>
+							<li>User Interface Design (UI Design)</li>
+							<li>User Experience Design (UX Design)</li>
+							<li>Usability Testing</li>
+							<li>Accessibility Testing</li>
+						</ul>
+					</div>
+				</details>
+
+				<details class="serviceLink flex width100">
+					<summary class="serviceCard flex justifyBetween width95 m-width85">
+						Web Development (Frontend) <i class="fa-solid fa-chevron-down"></i>
+					</summary>
+					<div class="serviceDesc width95 m-width85">
+						<ul>
+							<li>Designing</li>
+							<li>Development</li>
+							<li>Develop From Scratch (Frameworks If Only Needed)</li>
+						</ul>
+					</div>
+				</details>
+
+				<details class="serviceLink flex width100">
+					<summary class="serviceCard flex justifyBetween width95 m-width85">
+						Website Optimization <i class="fa-solid fa-chevron-down"></i>
+					</summary>
+					<div class="serviceDesc width95 m-width85">
+						<ul>
+							<li>Search Engine Optimization (SEO)</li>
+							<li>Analytic Services</li>
+							<li>Website Performance</li>
+						</ul>
+					</div>
+				</details>
+
+				<details class="serviceLink flex width100">
+					<summary class="serviceCard flex justifyBetween width95 m-width85">
+						Graphic Design <i class="fa-solid fa-chevron-down"></i>
+					</summary>
+					<div class="serviceDesc width95 m-width85">
+						<ul>
+							<li>Logo Design</li>
+							<li>Icon Design</li>
+							<li>Branding Design</li>
+							<li>Marketing and Advertising Design</li>
+							<li>Social Media Promotion Design</li>
+						</ul>
+					</div>
+				</details>
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+	<div class="containerBlock flex" id="resumeSection">
+
+		<div class="container flex flexCol">
+
+			<h1 class="heading disRegular width100">Resume</h1>
+
+			<div class="flex flexRow justifyBetween alignStart width100 marginT10 marginB50 m-marginB30">
+				<h1 class="subHeading regular width50 m500-width100">Want to check on my skills? Check out my resume,</h1>
+
+				<div class="cubeImg m500-noDisplay">
+					<img src="./images/cube.png">
+				</div>
+			</div>
+
+			<div class="flex flexRow justifyStart gap30 width100 marginB50 m-marginB30">
+				<button class="redBtn regular" onclick="window.open('https://1drv.ms/b/s!AsVQoLOAV9gkonhPr_I3_ASlVd-5?e=NVrEtn')">View Online <i class="fa-solid fa-square-arrow-up-right"></i></button>
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+	<div class="containerBlock flex" id="contactSection">
+
+		<div class="container flex flexCol">
+
+			<h1 class="heading disRegular width100">Contact Me</h1>
+
+			<div class="flex flexRow justifyBetween alignStart width100 marginT10 marginB50 m-marginB30">
+				<h1 class="subHeading regular width50 m500-width100">Want to collaborate with me for your next project?</h1>
+
+				<div class="cubeImg m500-noDisplay">
+					<img src="./images/cube.png">
+				</div>
+			</div>
+
+			<div class="formBox flex flexRow m-flexCol width100 marginB50 m-marginB30">
+
+				<div class="formImage flex height100 width30 m-noDisplay">
+					<img src="https://i.postimg.cc/pr80WsTD/form-Image.png">
+				</div>
+
+				<div class="formContent flex flexCol height100 width70 m-width100">
+					<form id="messageForm" class="flex flexCol justifyStart alignStart height90 width90 gap30" method="POST" action="https://script.google.com/macros/s/AKfycbzCJEd54wcgiHwnFyGTArUB6rv-FjxtjvyUvGAZ0759oFohuaiDbhBSy7jimqxW7ubB/exec">
+
+						<div class="flex flexCol alignStart width100 m-width95 gap05">
+							<label for="name" class="light">Full Name:</label>
+							<input type="text" class="light" id="name" name="Full Name" placeholder="Enter Your Full Name" title="Enter Your Full Name" required>
+						</div>
+
+						<div class="flex flexCol alignStart width100 m-width95 gap05">
+							<label for="email" class="light">Email Address:</label>
+							<input type="text" class="light" id="email" name="Email" placeholder="Enter Your Email Address" title="Enter Your Email Address" required>
+						</div>
+
+						<div class="flex flexCol alignStart width100 m-width95 gap05">
+							<label for="message" class="light">Message:</label>
+							<textarea id="message" class="light" name="Message" placeholder="Enter Your Message" title="Enter Your Message" required></textarea>
+						</div>
+
+						<div class="flex justifyStart width100 m-width95">
+							<button class="redBtn regular" type="submit">Submit</button>
+						</div>
+
+					</form>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+	<div class="containerBlock flex">
+
+		<div class="container flex flexCol">
+
+			<h1 class="heading disRegular width100">Follow Me</h1>
+
+			<div class="flex flexRow justifyBetween alignStart width100 marginT10 marginB50 m-marginB30">
+				<h1 class="subHeading regular width50 m500-width100">Get the latest information about my projects,</h1>
+
+				<div class="cubeImg m500-noDisplay">
+					<img src="./images/cube.png">
+				</div>
+			</div>
+
+			<div class="flex flexCol width100 gap25 m-gap20 marginB50">
+
+				<div class="flex flexRow width100 justifyBetween m-flexCol m-gap20">
+					<a class="flex width30 m-width100" href="mailto:sandun.wira@outlook.com" target="_blank">
+						<div class="socialCard flex justifyBetween width100" id="mailLink">
+							<i class="fa-solid fa-envelope"></i>
+
+							<div class="flex textLeft width80">
+								<h1 class="regular width100">Email</h1>
+							</div>
+
+							<i class="fa-solid fa-square-arrow-up-right"></i>
+						</div>
+					</a>
+
+					<a class="flex width30 m-width100" href="https://twitter.com/sandunwira" target="_blank">
+						<div class="socialCard flex justifyBetween width100" id="twtLink">
+							<i class="fa-brands fa-twitter"></i>
+
+							<div class="flex textLeft width80">
+								<h1 class="regular width100">Twitter</h1>
+							</div>
+
+							<i class="fa-solid fa-square-arrow-up-right"></i>
+						</div>
+					</a>
+
+					<a class="flex width30 m-width100" href="https://www.instagram.com/sandunwira" target="_blank">
+						<div class="socialCard flex justifyBetween width100" id="igLink">
+							<i class="fa-brands fa-instagram"></i>
+
+							<div class="flex textLeft width80">
+								<h1 class="regular width100">Instagram</h1>
+							</div>
+
+							<i class="fa-solid fa-square-arrow-up-right"></i>
+						</div>
+					</a>
+				</div>
+
+				<div class="flex flexRow width100 justifyBetween m-flexCol m-gap20">
+					<a class="flex width30 m-width100" href="https://www.twitch.tv/mahazona" target="_blank">
+						<div class="socialCard flex justifyBetween width100" id="twtvLink">
+							<i class="fa-brands fa-twitch"></i>
+
+							<div class="flex textLeft width80">
+								<h1 class="regular width100">Twitch</h1>
+							</div>
+
+							<i class="fa-solid fa-square-arrow-up-right"></i>
+						</div>
+					</a>
+
+					<a class="flex width30 m-width100" href="https://www.youtube.com/@sandunwira" target="_blank">
+						<div class="socialCard flex justifyBetween width100" id="ytLink">
+							<i class="fa-brands fa-youtube"></i>
+
+							<div class="flex textLeft width80">
+								<h1 class="regular width100">YouTube</h1>
+							</div>
+
+							<i class="fa-solid fa-square-arrow-up-right"></i>
+						</div>
+					</a>
+
+					<a class="flex width30 m-width100" href="https://soundcloud.com/sandunwira" target="_blank">
+						<div class="socialCard flex justifyBetween width100" id="scLink">
+							<i class="fa-brands fa-soundcloud"></i>
+
+							<div class="flex textLeft width80">
+								<h1 class="regular width100">SoundCloud</h1>
+							</div>
+
+							<i class="fa-solid fa-square-arrow-up-right"></i>
+						</div>
+					</a>
+				</div>
+
+				<div class="flex flexRow width100 justifyBetween m-flexCol m-gap20">
+					<a class="flex width30 m-width100" href="https://github.com/sandunwira" target="_blank">
+						<div class="socialCard flex justifyBetween width100" id="ghLink">
+							<i class="fa-brands fa-github-alt"></i>
+
+							<div class="flex textLeft width80">
+								<h1 class="regular width100">GitHub</h1>
+							</div>
+
+							<i class="fa-solid fa-square-arrow-up-right"></i>
+						</div>
+					</a>
+
+					<a class="flex width30 m-width100" href="https://www.linkedin.com/in/sandunwira" target="_blank">
+						<div class="socialCard flex justifyBetween width100" id="linLink">
+							<i class="fa-brands fa-linkedin-in"></i>
+
+							<div class="flex textLeft width80">
+								<h1 class="regular width100">LinkedIn</h1>
+							</div>
+
+							<i class="fa-solid fa-square-arrow-up-right"></i>
+						</div>
+					</a>
+
+					<a class="flex width30 m-width100 m-noDisplay" href="" target="_blank" style="visibility: hidden;">
+						<div class="socialCard flex justifyBetween width100" id="scLink">
+							<i class="fa-solid fa-envelope"></i>
+
+							<div class="flex textLeft width80">
+								<h1 class="regular width100">Name</h1>
+							</div>
+
+							<i class="fa-solid fa-square-arrow-up-right"></i>
+						</div>
+					</a>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+	<footer class="flex height100 width100">
+		<p class="light marginT30 m-marginT25 marginB30 m-marginB25">CRAFTED WITH <i class="fa-solid fa-heart"></i> FROM SANDUN</p>
+	</footer>
+
+
+
+	<!-- SCROLL-TO-TOP START ===========================================================-->
+	<button id="toTopBtn" class="flex redBtn"><i class="fa-solid fa-chevron-up"></i></button>
+	<!--============================================================= SCROLL-TO-TOP END -->
+
+
+
+	<script src="script.js"></script>
+
+</body>
+
+</html>
