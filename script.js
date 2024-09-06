@@ -1,4 +1,5 @@
 const contactForm = document.getElementById('messageForm');
+const contactSubmitBtn = document.getElementById('contactSubmitBtn');
 const formStatus = document.getElementById('formStatus');
 
 window.addEventListener("load", function () {
@@ -12,6 +13,9 @@ window.addEventListener("load", function () {
 
 		form.style.cursor = 'progress';
 		formStatus.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Please wait!';
+		contactSubmitBtn.disabled = true;
+		contactSubmitBtn.style.cursor = 'not-allowed';
+		contactSubmitBtn.style.opacity = '0.5';
 
 		fetch(action, {
 			method: 'POST',
@@ -22,6 +26,9 @@ window.addEventListener("load", function () {
 			contactForm.reset();
 			formStatus.innerHTML = '<i class="fa-solid fa-circle-check" style="color: var(--green);"></i> Your message has been sent!';
 			form.style.cursor = 'default';
+			contactSubmitBtn.disabled = false;
+			contactSubmitBtn.style.cursor = 'pointer';
+			contactSubmitBtn.style.opacity = '1';
 			setTimeout(() => {
 				formStatus.innerHTML = '';
 			}, 4000);
@@ -30,6 +37,9 @@ window.addEventListener("load", function () {
 		.catch(() => {
 			formStatus.innerHTML = '<i class="fa-solid fa-circle-xmark" style="color: var(--accent);"></i> Oops! Something went wrong. Please try again!';
 			form.style.cursor = 'default';
+			contactSubmitBtn.disabled = false;
+			contactSubmitBtn.style.cursor = 'pointer';
+			contactSubmitBtn.style.opacity = '1';
 		});
 	});
 });
