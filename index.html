@@ -5,10 +5,10 @@
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GM9T435SFG"></script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-GM9T435SFG');
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-GM9T435SFG');
 	</script>
 
 	<meta charset="UTF-8">
@@ -38,12 +38,12 @@
 	<link rel="stylesheet" href="fonts.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="mobile.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 	<link rel="preload" href="fonts.css" as="style" type="text/css">
 	<link rel="preload" href="style.css" as="style" type="text/css">
 	<link rel="preload" href="mobile.css" as="style" type="text/css">
-	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" type="text/css" crossorigin>
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" as="style" type="text/css" crossorigin>
 	<link rel="preload" href="./fonts/Campeche-Light.otf" as="font" type="font/otf" crossorigin>
 	<link rel="preload" href="./fonts/Campeche-Regular.otf" as="font" type="font/otf" crossorigin>
 	<link rel="preload" href="./fonts/Campeche-Medium.otf" as="font" type="font/otf" crossorigin>
@@ -121,7 +121,7 @@
 			</div>
 
 			<div class="flex justifyStart width100 marginB50 m-marginB30">
-				<button class="redBtn regular" onclick="document.getElementById('contactSection').scrollIntoView();">Hire Me <i class="fa-solid fa-chevron-right"></i></button>
+				<a class="redLinkBtn flex flexRow alignCenter gap10 redBtn regular" href="https://www.fiverr.com/sandunwira" target="_blank">Hire Me on Fiverr <i class="fa-solid fa-chevron-right"></i></a>
 			</div>
 
 			<div class="flex flexRow alignStart justifyBetween width100">
@@ -136,7 +136,7 @@
 					<div class="aboutCounter flex flexRow width100 justifyStart m-gap50 m-justifyCenter">
 						<div class="flex flexCol width10 marginR30">
 							<h1 class="medium">
-								9<span class="redText">+</span>
+								20<span class="redText">+</span>
 							</h1>
 
 							<p class="light textCenter lineH11">Completed Projects</p>
@@ -144,7 +144,7 @@
 
 						<div class="flex flexCol width10">
 							<h1 class="medium">
-								5<span class="redText">+</span>
+								3<span class="redText">+</span>
 							</h1>
 
 							<p class="light textCenter lineH11">Years Experience</p>
@@ -242,7 +242,7 @@
 
 			<div class="flex width100">
 				<a href="https://github.com/sandunwira" target="_blank">
-					<button class="redBtn regular">View More On GitHub <i class="fa-solid fa-square-arrow-up-right"></i></button>
+					<button class="flex flexRow alignCenter gap10 redBtn regular">View More On GitHub <i class="fa-solid fa-square-arrow-up-right"></i></button>
 				</a>
 			</div>
 
@@ -269,7 +269,7 @@
 			<div class="flex flexCol gap15 width100">
 
 				<details class="serviceLink flex width100">
-					<summary class="serviceCard flex justifyBetween width95 m-width85">
+					<summary class="serviceCard flex justifyBetween">
 						UI/UX Design <i class="fa-solid fa-chevron-down"></i>
 					</summary>
 					<div class="serviceDesc width95 m-width85">
@@ -284,33 +284,79 @@
 				</details>
 
 				<details class="serviceLink flex width100">
-					<summary class="serviceCard flex justifyBetween width95 m-width85">
+					<summary class="serviceCard flex justifyBetween">
 						Web Development (Frontend) <i class="fa-solid fa-chevron-down"></i>
 					</summary>
 					<div class="serviceDesc width95 m-width85">
 						<ul>
 							<li>Designing</li>
 							<li>Development</li>
-							<li>Develop From Scratch (Frameworks If Only Needed)</li>
+							<li>Web Development using HTML, CSS, JavaScript</li>
+							<li>Web Development using Frameworks</li>
+							<li>Responsive Design</li>
+							<li>Web Accessibility</li>
 						</ul>
 					</div>
 				</details>
 
 				<details class="serviceLink flex width100">
-					<summary class="serviceCard flex justifyBetween width95 m-width85">
-						Website Optimization <i class="fa-solid fa-chevron-down"></i>
+					<summary class="serviceCard flex justifyBetween">
+						Web Development (Fullstack) <i class="fa-solid fa-chevron-down"></i>
+					</summary>
+					<div class="serviceDesc width95 m-width85">
+						<ul>
+							<li>Designing</li>
+							<li>Development</li>
+							<li>Web Development using HTML, CSS, JavaScript</li>
+							<li>Web Development using Frameworks</li>
+							<li>Backend Development using Node.js, Express, PHP, React</li>
+							<li>Database Management using MySQL, MongoDB, Firebase, PHPMyAdmin</li>
+						</ul>
+					</div>
+				</details>
+
+				<details class="serviceLink flex width100">
+					<summary class="serviceCard flex justifyBetween">
+						Website Optimization and SEO <i class="fa-solid fa-chevron-down"></i>
 					</summary>
 					<div class="serviceDesc width95 m-width85">
 						<ul>
 							<li>Search Engine Optimization (SEO)</li>
-							<li>Analytic Services</li>
+							<li>Google Search Console</li>
+							<li>Bing Webmaster Tools</li>
+							<li>Google Analytics</li>
 							<li>Website Performance</li>
 						</ul>
 					</div>
 				</details>
 
 				<details class="serviceLink flex width100">
-					<summary class="serviceCard flex justifyBetween width95 m-width85">
+					<summary class="serviceCard flex justifyBetween">
+						Chatbot Integration <i class="fa-solid fa-chevron-down"></i>
+					</summary>
+					<div class="serviceDesc width95 m-width85">
+						<ul>
+							<li>Conversational Chatbots</li>
+							<li>Chatbot APIs</li>
+							<li>Rasa and Other Chatbot Frameworks</li>
+						</ul>
+					</div>
+				</details>
+
+				<details class="serviceLink flex width100">
+					<summary class="serviceCard flex justifyBetween">
+						Native Windows Applications <i class="fa-solid fa-chevron-down"></i>
+					</summary>
+					<div class="serviceDesc width95 m-width85">
+						<ul>
+							<li>Tauri Applications</li>
+							<li>Electron Applications</li>
+						</ul>
+					</div>
+				</details>
+
+				<details class="serviceLink flex width100">
+					<summary class="serviceCard flex justifyBetween">
 						Graphic Design <i class="fa-solid fa-chevron-down"></i>
 					</summary>
 					<div class="serviceDesc width95 m-width85">
@@ -346,7 +392,8 @@
 			</div>
 
 			<div class="flex flexRow justifyStart gap30 width100 marginB50 m-marginB30">
-				<button class="redBtn regular" onclick="window.open('/cv.pdf')">View Online <i class="fa-solid fa-square-arrow-up-right"></i></button>
+				<button class="redBtn regular" onclick="window.open('/cv.pdf')">View Online</button>
+				<button class="flex flexRow alignCenter gap10 redBtn regular" onclick="downloadCV();">Download <i class="fa-solid fa-file-arrow-down"></i></button>
 			</div>
 
 		</div>
@@ -437,24 +484,24 @@
 						</div>
 					</a>
 
-					<a class="flex width30 m-width100" href="https://twitter.com/sandunwira" target="_blank">
-						<div class="socialCard flex justifyBetween width100" id="twtLink">
-							<i class="fa-brands fa-twitter"></i>
+					<a class="flex width30 m-width100" href="https://github.com/sandunwira" target="_blank">
+						<div class="socialCard flex justifyBetween width100" id="ghLink">
+							<i class="fa-brands fa-github-alt"></i>
 
 							<div class="flex textLeft width80">
-								<h1 class="regular width100">Twitter</h1>
+								<h1 class="regular width100">GitHub</h1>
 							</div>
 
 							<i class="fa-solid fa-square-arrow-up-right"></i>
 						</div>
 					</a>
 
-					<a class="flex width30 m-width100" href="https://www.instagram.com/sandunwira" target="_blank">
-						<div class="socialCard flex justifyBetween width100" id="igLink">
-							<i class="fa-brands fa-instagram"></i>
+					<a class="flex width30 m-width100" href="https://www.linkedin.com/in/sandunwira" target="_blank">
+						<div class="socialCard flex justifyBetween width100" id="linLink">
+							<i class="fa-brands fa-linkedin-in"></i>
 
 							<div class="flex textLeft width80">
-								<h1 class="regular width100">Instagram</h1>
+								<h1 class="regular width100">LinkedIn</h1>
 							</div>
 
 							<i class="fa-solid fa-square-arrow-up-right"></i>
@@ -487,50 +534,12 @@
 						</div>
 					</a>
 
-					<a class="flex width30 m-width100" href="https://soundcloud.com/sandunwira" target="_blank">
-						<div class="socialCard flex justifyBetween width100" id="scLink">
-							<i class="fa-brands fa-soundcloud"></i>
+					<a class="flex width30 m-width100" href="https://open.spotify.com/artist/0EeC5w9rgOIUQYNRM3TzwR" target="_blank">
+						<div class="socialCard flex justifyBetween width100" id="spotifyLink">
+							<i class="fa-brands fa-spotify"></i>
 
 							<div class="flex textLeft width80">
-								<h1 class="regular width100">SoundCloud</h1>
-							</div>
-
-							<i class="fa-solid fa-square-arrow-up-right"></i>
-						</div>
-					</a>
-				</div>
-
-				<div class="flex flexRow width100 justifyBetween m-flexCol m-gap20">
-					<a class="flex width30 m-width100" href="https://github.com/sandunwira" target="_blank">
-						<div class="socialCard flex justifyBetween width100" id="ghLink">
-							<i class="fa-brands fa-github-alt"></i>
-
-							<div class="flex textLeft width80">
-								<h1 class="regular width100">GitHub</h1>
-							</div>
-
-							<i class="fa-solid fa-square-arrow-up-right"></i>
-						</div>
-					</a>
-
-					<a class="flex width30 m-width100" href="https://www.linkedin.com/in/sandunwira" target="_blank">
-						<div class="socialCard flex justifyBetween width100" id="linLink">
-							<i class="fa-brands fa-linkedin-in"></i>
-
-							<div class="flex textLeft width80">
-								<h1 class="regular width100">LinkedIn</h1>
-							</div>
-
-							<i class="fa-solid fa-square-arrow-up-right"></i>
-						</div>
-					</a>
-
-					<a class="flex width30 m-width100 m-noDisplay" href="" target="_blank" style="visibility: hidden;">
-						<div class="socialCard flex justifyBetween width100" id="scLink">
-							<i class="fa-solid fa-envelope"></i>
-
-							<div class="flex textLeft width80">
-								<h1 class="regular width100">Name</h1>
+								<h1 class="regular width100">Spotify</h1>
 							</div>
 
 							<i class="fa-solid fa-square-arrow-up-right"></i>
@@ -547,7 +556,7 @@
 
 
 	<footer class="flex height100 width100">
-		<p class="light marginT30 m-marginT25 marginB30 m-marginB25">CRAFTED WITH <i class="fa-solid fa-heart"></i> FROM SANDUN</p>
+		<p class="light marginT30 m-marginT25 marginB30 m-marginB25">CRAFTED WITH <i class="fa-solid fa-heart"></i> FROM <a href="https://github.com/sandunwira/sandunwira.github.io" target="_blank">SANDUN</a></p>
 	</footer>
 
 

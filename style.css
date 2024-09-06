@@ -8,10 +8,8 @@
 
 	--mailColor: #D18E11;
 	--ytColor: #FF0000;
-	--scColor: #FF3300;
-	--igColor: #E4405F;
+	--spotifyColor: #1DB954;
 	--twtvColor: #9146FF;
-	--twtColor: #1D9BF0;
 	--linColor: #0A66C2;
 	--ghColor: #181717;
 }
@@ -66,6 +64,21 @@ button{
 	outline: none;
 	text-transform: uppercase;
 	cursor: pointer;
+}
+.redLinkBtn {
+	padding: 8px 18px;
+	font-size: 14px;
+	border: none;
+	border-radius: 6px;
+	outline: none;
+	text-transform: uppercase;
+	transition: 0.3s;
+}
+.redLinkBtn:hover {
+	color: var(--white);
+	background: var(--accent);
+	border: 2px solid var(--accent);
+	transition: 0.3s;
 }
 
 .redBtn{
@@ -188,6 +201,9 @@ button{
 }
 .alignStart{
 	align-items: flex-start;
+}
+.alignCenter{
+	align-items: center;
 }
 .alignEnd{
 	align-items: flex-end;
@@ -542,7 +558,7 @@ header{
 }
 
 .linkCard h1{
-	font-size: 24px;
+	font-size: 18px;
 }
 .linkCard h2{
 	font-size: 18px;
@@ -688,16 +704,6 @@ form textarea:focus{
 	background: var(--mailColor);
 	transition: 0.3s;
 }
-#twtLink:hover{
-	color: var(--white);
-	background: var(--twtColor);
-	transition: 0.3s;
-}
-#igLink:hover{
-	color: var(--white);
-	background: var(--igColor);
-	transition: 0.3s;
-}
 #twtvLink:hover{
 	color: var(--white);
 	background: var(--twtvColor);
@@ -708,9 +714,9 @@ form textarea:focus{
 	background: var(--ytColor);
 	transition: 0.3s;
 }
-#scLink:hover{
+#spotifyLink:hover{
 	color: var(--white);
-	background: var(--scColor);
+	background: var(--spotifyColor);
 	transition: 0.3s;
 }
 #ghLink:hover{
