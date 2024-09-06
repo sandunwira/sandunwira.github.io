@@ -1,21 +1,39 @@
+const contactForm = document.getElementById('messageForm');
+const formStatus = document.getElementById('formStatus');
+
 window.addEventListener("load", function () {
-	const form = document.getElementById('messageForm');
-	form.addEventListener("submit", function (e) {
+	contactForm.addEventListener("submit", function (e) {
 		e.preventDefault();
-		form.style.cursor = 'progress';
-		const data = new FormData(form);
+		const form = e.target;
+
+		// submit form data
+		const data = new FormData(contactForm);
 		const action = e.target.action;
+
+		form.style.cursor = 'progress';
+		formStatus.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Please wait!';
+
 		fetch(action, {
 			method: 'POST',
 			body: data,
 		})
-			.then(() => {
-				form.style.cursor = 'default';
-				alert("Success!");
-				form.reset();
-			})
+
+		.then(() => {
+			contactForm.reset();
+			formStatus.innerHTML = '<i class="fa-solid fa-circle-check" style="color: var(--green);"></i> Your message has been sent!';
+			form.style.cursor = 'default';
+			setTimeout(() => {
+				formStatus.innerHTML = '';
+			}, 4000);
+		})
+
+		.catch(() => {
+			formStatus.innerHTML = '<i class="fa-solid fa-circle-xmark" style="color: var(--accent);"></i> Oops! Something went wrong. Please try again!';
+			form.style.cursor = 'default';
+		});
 	});
 });
+
 
 
 
