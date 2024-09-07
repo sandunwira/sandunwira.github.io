@@ -17,39 +17,39 @@
 	<meta name="theme-color" content="#CD3131">
 
 	<!-- Meta Tags Start =================================================================================-->
-	<meta name="title" content="Sandun Wiratunga - Portfolio">
+	<meta name="title" content="Sandun Wiratunga - Home">
 	<meta name="description" content="Hey There! I'm Sandun Wiratunga, a Software Engineering Undergraduate who has a passion in UI/UX Design, Graphic Design and Web Development. Welcome to my personal website!">
 	<!-- Open Graph -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="">
-	<meta property="og:title" content="Sandun Wiratunga - Portfolio">
+	<meta property="og:title" content="Sandun Wiratunga - Home">
 	<meta property="og:description" content="Hey There! I'm Sandun Wiratunga, a Software Engineering Undergraduate who has a passion in UI/UX Design, Graphic Design and Web Development. Welcome to my personal website!">
 	<meta property="og:image" content="https://i.postimg.cc/JhGS2GXR/preview.jpg">
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:url" content="">
-	<meta name="twitter:title" content="Sandun Wiratunga - Portfolio">
+	<meta name="twitter:title" content="Sandun Wiratunga - Home">
 	<meta name="twitter:description" content="Hey There! I'm Sandun Wiratunga, a Software Engineering Undergraduate who has a passion in UI/UX Design, Graphic Design and Web Development. Welcome to my personal website!">
 	<meta name="twitter:image" content="https://i.postimg.cc/JhGS2GXR/preview.jpg">
 	<!--=================================================================================== Meta Tags End -->
 
-	<title>Sandun Wiratunga - Portfolio</title>
+	<title>Sandun Wiratunga - Home</title>
 
-	<link rel="stylesheet" href="fonts.css">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="mobile.css">
+	<link rel="stylesheet" href="/fonts.css">
+	<link rel="stylesheet" href="/style.css">
+	<link rel="stylesheet" href="/mobile.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-	<link rel="preload" href="fonts.css" as="style" type="text/css">
-	<link rel="preload" href="style.css" as="style" type="text/css">
-	<link rel="preload" href="mobile.css" as="style" type="text/css">
+	<link rel="preload" href="/fonts.css" as="style" type="text/css">
+	<link rel="preload" href="/style.css" as="style" type="text/css">
+	<link rel="preload" href="/mobile.css" as="style" type="text/css">
 	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" as="style" type="text/css" crossorigin>
-	<link rel="preload" href="./fonts/Campeche-Light.otf" as="font" type="font/otf" crossorigin>
-	<link rel="preload" href="./fonts/Campeche-Regular.otf" as="font" type="font/otf" crossorigin>
-	<link rel="preload" href="./fonts/Campeche-Medium.otf" as="font" type="font/otf" crossorigin>
-	<link rel="preload" href="./fonts/Campeche-Bold.otf" as="font" type="font/otf" crossorigin>
-	<link rel="preload" href="./fonts/CampecheDisplay-Regular.otf" as="font" type="font/otf" crossorigin>
-	<link rel="preload" href="./fonts/CampecheDisplay-Medium.otf" as="font" type="font/otf" crossorigin>
+	<link rel="preload" href="/fonts/Campeche-Light.otf" as="font" type="font/otf" crossorigin>
+	<link rel="preload" href="/fonts/Campeche-Regular.otf" as="font" type="font/otf" crossorigin>
+	<link rel="preload" href="/fonts/Campeche-Medium.otf" as="font" type="font/otf" crossorigin>
+	<link rel="preload" href="/fonts/Campeche-Bold.otf" as="font" type="font/otf" crossorigin>
+	<link rel="preload" href="/fonts/CampecheDisplay-Regular.otf" as="font" type="font/otf" crossorigin>
+	<link rel="preload" href="/fonts/CampecheDisplay-Medium.otf" as="font" type="font/otf" crossorigin>
 
 	<link rel="icon" href="https://i.postimg.cc/br0TXKGt/favicon.png">
 </head>
@@ -58,16 +58,17 @@
 
 	<nav class="flex flexRow">
 		<div class="flex flexRow justifyEvenly height100 width100">
-			<div class="navLogo flex height100 width20" onclick="document.getElementById('headerSection').scrollIntoView();">
-				<img src="./images/logo.svg">
-			</div>
+			<a class="navLogo flex height100 width20" href="/">
+				<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1428 972"><defs><style>.cls-1{fill:#ececec;}.cls-2{fill:#e73636;}</style></defs><path class="cls-1" d="M564.6,548v459.6H35.4V704L243,732.8V850.4H357V677.6L243,662,35.4,634.4V35.6H243L357,50l51.6,7.2,156,20.4V434L357,406.4V207.2L243,192.8v312l114,15.6Z" transform="translate(-35.4 -35.6)"/><path class="cls-2" d="M622.2,1007.6V35.6H829.8V850.4h114V35.6h207.6V850.4h104.4V50l207.6,27.6v930Z" transform="translate(-35.4 -35.6)"/></svg>
+			</a>
 
-			<div class="flex justifyStart height100 width70 m-width40">
-				<span class="light" onclick="document.getElementById('resumeSection').scrollIntoView();">RESUME</span>
+			<div class="flex justifyStart height100 width70 m-width40 gap25 m-gap15">
+				<a class="light m-fontSize12" href="/#resume">RESUME</a>
+				<a class="light m-fontSize12" href="/portfolio.html">PORTFOLIO</a>
 			</div>
 
 			<div class="flex height100">
-				<button class="redBtn" onclick="document.getElementById('contactSection').scrollIntoView();">Get In Touch</button>
+				<a class="redLinkBtn redBtn regular" href="/#contact">Get In Touch</a>
 			</div>
 		</div>
 	</nav>
@@ -83,7 +84,7 @@
 						<span class="light">Wiratunga</span>
 					</h1>
 
-					<p class="textJustify lineH16 m-lineH17 width100">Hey There! I'm Sandun Wiratunga, a Software Engineering Undergraduate who has a passion in UI/UX Design, Graphic Design and Web Development. Welcome to my personal website!</p>
+					<p class="textJustify m-textLeft lineH16 m-lineH17 width100">Hey There! I'm Sandun Wiratunga, a Software Engineering Undergraduate who has a passion in UI/UX Design, Graphic Design and Web Development. Welcome to my personal website!</p>
 
 					<div class="width100">
 						<button class="redBtn" onclick="document.getElementById('aboutSection').scrollIntoView();">Explore</button>
@@ -116,7 +117,7 @@
 				<h1 class="subHeading regular width50 m500-width100">I will deliver results that surpass your expectations.</h1>
 
 				<div class="cubeImg m500-noDisplay">
-					<img src="./images/cube.png">
+					<img src="/images/cube.png">
 				</div>
 			</div>
 
@@ -127,11 +128,11 @@
 			<div class="flex flexRow alignStart justifyBetween width100">
 
 				<div class="cubeLargeImg flex width40 m-noDisplay">
-					<img src="./images/cube-large.png">
+					<img src="/images/cube-large.png">
 				</div>
 
 				<div class="flex flexCol width60 m-width100">
-					<p class="textJustify lineH16 m-lineH17 marginB20">Hi, I'm Sandun Wiratunga, a Software Engineering Undergraduate with a passion for UI/UX Design, Graphic Design, and Web Development. I'm always looking for interesting and meaningful projects to work on, and I take pride in my work. I'm committed to producing high-quality code, design, and development, and I always strive to optimize my work.</p>
+					<p class="textJustify m-textLeft lineH16 m-lineH17 marginB20">Hi, I'm Sandun Wiratunga, a Software Engineering Undergraduate with a passion for UI/UX Design, Graphic Design, and Web Development. I'm always looking for interesting and meaningful projects to work on, and I take pride in my work. I'm committed to producing high-quality code, design, and development, and I always strive to optimize my work.</p>
 
 					<div class="aboutCounter flex flexRow width100 justifyStart m-gap50 m-justifyCenter">
 						<div class="flex flexCol width10 marginR30">
@@ -170,14 +171,14 @@
 				<h1 class="subHeading regular width50 m500-width100">Some of my finished and ongoing projects,</h1>
 
 				<div class="cubeImg m500-noDisplay">
-					<img src="./images/cube.png">
+					<img src="/images/cube.png">
 				</div>
 			</div>
 
 			<div class="flex flexCol gap15 width100">
 				<a class="flex width100" href="https://github.com/sandunwira/NovaWeb" target="_blank">
 					<div class="linkCard flex justifyBetween width100">
-						<div class="linkLogo flex m-noDisplay">
+						<div class="linkLogo flex m500-noDisplay">
 							<img src="https://i.postimg.cc/9Mkxjp13/nova.png">
 						</div>
 
@@ -186,14 +187,17 @@
 						</div>
 
 						<div class="flex textLeft width20 m-width40">
-							<h2 class="light textRight width100">View Project <i class="fa-solid fa-square-arrow-up-right"></i></h2>
+							<h2 class="light textRight width100">
+								<span class="marginR5 m500-noDisplay">View Project</span>
+								<i class="fa-solid fa-square-arrow-up-right"></i>
+							</h2>
 						</div>
 					</div>
 				</a>
 
 				<a class="flex width100" href="https://github.com/sandunwira/SupTube" target="_blank">
 					<div class="linkCard flex justifyBetween width100">
-						<div class="linkLogo flex m-noDisplay">
+						<div class="linkLogo flex m500-noDisplay">
 							<img src="https://i.postimg.cc/Ss4bCN77/suptube.png">
 						</div>
 
@@ -202,14 +206,17 @@
 						</div>
 
 						<div class="flex textLeft width20 m-width40">
-							<h2 class="light textRight width100">View Project <i class="fa-solid fa-square-arrow-up-right"></i></h2>
+							<h2 class="light textRight width100">
+								<span class="marginR5 m500-noDisplay">View Project</span>
+								<i class="fa-solid fa-square-arrow-up-right"></i>
+							</h2>
 						</div>
 					</div>
 				</a>
 
 				<a class="flex width100" href="https://github.com/sandunwira/Chroma" target="_blank">
 					<div class="linkCard flex justifyBetween width100">
-						<div class="linkLogo flex m-noDisplay">
+						<div class="linkLogo flex m500-noDisplay">
 							<img src="https://i.postimg.cc/hGZ8J1w2/chroma.png">
 						</div>
 
@@ -218,14 +225,17 @@
 						</div>
 
 						<div class="flex textLeft width20 m-width40">
-							<h2 class="light textRight width100">View Project <i class="fa-solid fa-square-arrow-up-right"></i></h2>
+							<h2 class="light textRight width100">
+								<span class="marginR5 m500-noDisplay">View Project</span>
+								<i class="fa-solid fa-square-arrow-up-right"></i>
+							</h2>
 						</div>
 					</div>
 				</a>
 
 				<a class="flex marginB40 width100" href="https://github.com/sandunwira/PixelPlayer" target="_blank">
 					<div class="linkCard flex justifyBetween width100">
-						<div class="linkLogo flex m-noDisplay">
+						<div class="linkLogo flex m500-noDisplay">
 							<img src="https://i.postimg.cc/pX8tq0Jn/pixelplayer.png">
 						</div>
 
@@ -234,7 +244,10 @@
 						</div>
 
 						<div class="flex textLeft width20 m-width40">
-							<h2 class="light textRight width100">View Project <i class="fa-solid fa-square-arrow-up-right"></i></h2>
+							<h2 class="light textRight width100">
+								<span class="marginR5 m500-noDisplay">View Project</span>
+								<i class="fa-solid fa-square-arrow-up-right"></i>
+							</h2>
 						</div>
 					</div>
 				</a>
@@ -262,7 +275,7 @@
 				<h1 class="subHeading regular width50 m500-width100">Available services that I can and will work on,</h1>
 
 				<div class="cubeImg m500-noDisplay">
-					<img src="./images/cube.png">
+					<img src="/images/cube.png">
 				</div>
 			</div>
 
@@ -377,7 +390,7 @@
 
 
 
-	<div class="containerBlock flex" id="resumeSection">
+	<div class="containerBlock flex" id="resume">
 
 		<div class="container flex flexCol">
 
@@ -387,11 +400,11 @@
 				<h1 class="subHeading regular width50 m500-width100">Want to check on my skills? Check out my resume,</h1>
 
 				<div class="cubeImg m500-noDisplay">
-					<img src="./images/cube.png">
+					<img src="/images/cube.png">
 				</div>
 			</div>
 
-			<div class="flex flexRow justifyStart gap30 width100 marginB50 m-marginB30">
+			<div class="flex flexRow justifyStart gap30 m-gap15 width100 marginB50 m-marginB30">
 				<button class="redBtn regular" onclick="window.open('/cv.pdf')">View Online</button>
 				<button class="flex flexRow alignCenter gap10 redBtn regular" onclick="downloadCV();">Download <i class="fa-solid fa-file-arrow-down"></i></button>
 			</div>
@@ -402,7 +415,7 @@
 
 
 
-	<div class="containerBlock flex" id="contactSection">
+	<div class="containerBlock flex" id="contact">
 
 		<div class="container flex flexCol">
 
@@ -412,7 +425,7 @@
 				<h1 class="subHeading regular width50 m500-width100">Want to collaborate with me for your next project?</h1>
 
 				<div class="cubeImg m500-noDisplay">
-					<img src="./images/cube.png">
+					<img src="/images/cube.png">
 				</div>
 			</div>
 
@@ -466,7 +479,7 @@
 				<h1 class="subHeading regular width50 m500-width100">Get the latest information about my projects,</h1>
 
 				<div class="cubeImg m500-noDisplay">
-					<img src="./images/cube.png">
+					<img src="/images/cube.png">
 				</div>
 			</div>
 
@@ -568,7 +581,7 @@
 
 
 
-	<script src="script.js"></script>
+	<script src="/script.js"></script>
 
 </body>
 
