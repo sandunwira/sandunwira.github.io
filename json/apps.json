@@ -1,0 +1,86 @@
+[
+	{
+		"name": "Greencity",
+		"description": "A C# application for Inventory Management System",
+		"technologies": "C#, .NET, SQL, GunaUI",
+		"img": "/images/apps/apps-nopreview.webp",
+		"link": "https://github.com/sandunwira/Greencity-CSharp"
+	},
+	{
+		"name": "SupTube",
+		"description": "An open-source Windows client for YouTube",
+		"technologies": "Tauri, Rust, Cargo",
+		"img": "/images/apps/apps-suptube.webp",
+		"link": "https://github.com/sandunwira/SupTube"
+	},
+	{
+		"name": "TwitchBox",
+		"description": "An open-source Windows client for Twitch",
+		"technologies": "Tauri, Rust, Cargo",
+		"img": "/images/apps/apps-twitchbox.webp",
+		"link": "https://github.com/sandunwira/TwitchBox"
+	},
+	{
+		"name": "Lumina",
+		"description": "A Windows app that helps you to achieve relaxation and mindfulness",
+		"technologies": "Tauri, Rust, Cargo, npm, HTML, CSS, JavaScript, JSON, Figma",
+		"img": "/images/apps/apps-lumina.webp",
+		"link": "https://github.com/sandunwira/Lumina"
+	},
+	{
+		"name": "CareConnectt",
+		"description": "An Android app for dementia patients to help them to do their daily tasks",
+		"technologies": "Flutter, Dart, Android Studio, Firebase, Google Maps API, Figma",
+		"img": "/images/apps/apps-nopreview.webp",
+		"link": "https://github.com/Care-Connectt/careconnectt"
+	},
+	{
+		"name": "PassForge",
+		"description": "A Windows app that helps you to generate secure passwords",
+		"technologies": "Tauri, Rust, Cargo, HTML, CSS, JavaScript, Figma",
+		"img": "/images/apps/apps-passforge.webp",
+		"link": "https://github.com/sandunwira/PassForge"
+	},
+	{
+		"name": "Aurora",
+		"description": "A Windows client app for Aurora Chatbot",
+		"technologies": "Tauri, Rust, Cargo, npm, HTML, CSS, JavaScript, JSON, Rasa, Docker, Microsoft Azure",
+		"img": "/images/apps/apps-aurora.webp",
+		"link": "https://github.com/sandunwira/AuroraWeb"
+	},
+	{
+		"name": "QRious",
+		"description": "A Windows application for QR Management",
+		"technologies": "Tauri, Rust, Cargo, npm, HTML, CSS, JavaScript",
+		"img": "/images/apps/apps-qrious.webp",
+		"link": "https://github.com/sandunwira/QRious"
+	},
+	{
+		"name": "Stash",
+		"description": "A Windows application for managing zip files",
+		"technologies": "Tauri, Rust, Cargo, npm, HTML, CSS, JavaScript",
+		"img": "/images/apps/apps-nopreview.webp",
+		"link": "https://github.com/sandunwira/Stash"
+	},
+	{
+		"name": "PixelPlayer",
+		"description": "A Windows application for playing old retro flash games",
+		"technologies": "Tauri, Rust, Cargo, npm, HTML, CSS, JavaScript, JSON, Ruffle",
+		"img": "/images/apps/apps-pixelplayer.webp",
+		"link": "https://github.com/sandunwira/PixelPlayer"
+	},
+	{
+		"name": "Chroma",
+		"description": "A Windows application for managing Chromium browser installations",
+		"technologies": "Tauri, Rust, Cargo, npm, HTML, CSS, JavaScript",
+		"img": "/images/apps/apps-chroma.webp",
+		"link": "https://github.com/sandunwira/Chroma"
+	},
+	{
+		"name": "Nova",
+		"description": "A Windows 10 assistant project for replacement of Cortana",
+		"technologies": "Tauri, Rust, Cargo, npm, HTML, CSS, JavaScript, Rasa, Docker, Microsoft Azure",
+		"img": "/images/apps/apps-nopreview.webp",
+		"link": "https://github.com/sandunwira/NovaWeb"
+	}
+]

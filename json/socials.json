@@ -1,0 +1,38 @@
+[
+	{
+		"id": "mailLink",
+		"name": "Email",
+		"icon": "<i class=\"fa-solid fa-envelope\"></i>",
+		"link": "mailto:sandun.wira@outlook.com"
+	},
+	{
+		"id": "ghLink",
+		"name": "GitHub",
+		"icon": "<i class=\"fa-brands fa-github\"></i>",
+		"link": "https://github.com/sandunwira"
+	},
+	{
+		"id": "linLink",
+		"name": "LinkedIn",
+		"icon": "<i class=\"fa-brands fa-linkedin-in\"></i>",
+		"link": "https://www.linkedin.com/in/sandunwira"
+	},
+	{
+		"id": "twtvLink",
+		"name": "Twitch",
+		"icon": "<i class=\"fa-brands fa-twitch\"></i>",
+		"link": "https://www.twitch.tv/mahazona"
+	},
+	{
+		"id": "ytLink",
+		"name": "YouTube",
+		"icon": "<i class=\"fa-brands fa-youtube\"></i>",
+		"link": "https://www.youtube.com/@sandunwira"
+	},
+	{
+		"id": "spotifyLink",
+		"name": "Spotify",
+		"icon": "<i class=\"fa-brands fa-spotify\"></i>",
+		"link": "https://open.spotify.com/artist/0EeC5w9rgOIUQYNRM3TzwR"
+	}
+]

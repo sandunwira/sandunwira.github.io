@@ -48,6 +48,7 @@ window.addEventListener("load", function () {
 
 
 const scrollToTopBtn = document.getElementById("toTopBtn");
+
 window.onscroll = function () {
 	scrollFunction();
 };
@@ -64,6 +65,7 @@ scrollToTopBtn.addEventListener("click", function () {
 	document.body.scrollTop = 0; // For Safari
 	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });
+
 
 
 

@@ -35,15 +35,19 @@
 
 	<title>Sandun Wiratunga - Home</title>
 
-	<link rel="stylesheet" href="/fonts.css">
-	<link rel="stylesheet" href="/style.css">
-	<link rel="stylesheet" href="/mobile.css">
+	<link rel="stylesheet" href="/css/fonts.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/mobile.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+	<script src="/script.js" defer></script>
+	<script src="/js/socials.js" defer></script>
 
-	<link rel="preload" href="/fonts.css" as="style" type="text/css">
-	<link rel="preload" href="/style.css" as="style" type="text/css">
-	<link rel="preload" href="/mobile.css" as="style" type="text/css">
+	<link rel="preload" href="/css/fonts.css" as="style" type="text/css">
+	<link rel="preload" href="/css/style.css" as="style" type="text/css">
+	<link rel="preload" href="/css/mobile.css" as="style" type="text/css">
 	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" as="style" type="text/css" crossorigin>
+	<link rel="preload" href="/script.js" as="script" type="text/javascript">
+	<link rel="preload" href="/js/socials.js" as="script" type="text/javascript">
 	<link rel="preload" href="/fonts/Campeche-Light.otf" as="font" type="font/otf" crossorigin>
 	<link rel="preload" href="/fonts/Campeche-Regular.otf" as="font" type="font/otf" crossorigin>
 	<link rel="preload" href="/fonts/Campeche-Medium.otf" as="font" type="font/otf" crossorigin>
@@ -58,14 +62,45 @@
 
 	<nav class="flex flexRow">
 		<div class="flex flexRow justifyEvenly height100 width100">
-			<a class="navLogo flex height100 width20" href="/">
+			<a class="navLogo flex height100 width20" id="navHomeLink" href="/">
 				<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1428 972"><defs><style>.cls-1{fill:#ececec;}.cls-2{fill:#e73636;}</style></defs><path class="cls-1" d="M564.6,548v459.6H35.4V704L243,732.8V850.4H357V677.6L243,662,35.4,634.4V35.6H243L357,50l51.6,7.2,156,20.4V434L357,406.4V207.2L243,192.8v312l114,15.6Z" transform="translate(-35.4 -35.6)"/><path class="cls-2" d="M622.2,1007.6V35.6H829.8V850.4h114V35.6h207.6V850.4h104.4V50l207.6,27.6v930Z" transform="translate(-35.4 -35.6)"/></svg>
 			</a>
 
 			<div class="flex justifyStart height100 width70 m-width40 gap25 m-gap15">
-				<a class="light m-fontSize12" href="/#resume">RESUME</a>
+				<a class="light m-fontSize12" id="navResumeLink" href="/#resume">RESUME</a>
 				<a class="light m-fontSize12" href="/portfolio.html">PORTFOLIO</a>
 			</div>
+
+			<script>
+				const navHomeLink = document.getElementById('navHomeLink');
+				const navResumeLink = document.getElementById('navResumeLink');
+
+				window.onload = () => {
+					if (window.location.hash === '#resume') {
+						navResumeLink.classList.add('activeLink');
+						navResumeLink.classList.add('medium');
+					} else {
+						navResumeLink.classList.remove('activeLink');
+						navResumeLink.classList.remove('medium');
+					}
+				}
+
+				navHomeLink.onclick = () => {
+					event.preventDefault();
+					if (window.location.hash === '#resume') {
+						window.history.pushState("", document.title, window.location.pathname + window.location.search);
+					}
+					navResumeLink.classList.remove('activeLink');
+					navResumeLink.classList.remove('medium');
+					document.body.scrollTop = 0; // For Safari
+					document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+				}
+
+				navResumeLink.onclick = () => {
+					navResumeLink.classList.add('activeLink');
+					navResumeLink.classList.add('medium');
+				}
+			</script>
 
 			<div class="flex height100">
 				<a class="redLinkBtn redBtn regular" href="/#contact">Get In Touch</a>
@@ -75,9 +110,8 @@
 
 
 
-	<header class="flex flexCol justifyEnd" id="headerSection">
+	<header class="header flex flexCol justifyEnd">
 		<div class="flex flexRow justifyBetween alignEnd height100 width100">
-
 			<div class="flex width60 marginB40 m-width100">
 				<div class="flex flexCol height100 width85 gap40">
 					<h1 class="headerHeading lineH10 disMedium width100">Sandun<br>
@@ -95,7 +129,6 @@
 			<div class="proPic flex width40 m-noDisplay">
 				<img src="https://i.postimg.cc/rsTCqMt9/propic.webp">
 			</div>
-
 		</div>
 	</header>
 
@@ -108,13 +141,11 @@
 
 
 	<div class="containerBlock flex" id="aboutSection">
-
 		<div class="container flex flexCol">
-
-			<h1 class="heading disRegular width100">About Me</h1>
+			<h2 class="heading disRegular width100">About Me</h2>
 
 			<div class="flex flexRow justifyBetween alignStart width100 marginT10 marginB15 m-marginB30">
-				<h1 class="subHeading regular width50 m500-width100">I will deliver results that surpass your expectations.</h1>
+				<h3 class="subHeading regular width50 m500-width100">I will deliver results that surpass your expectations.</h3>
 
 				<div class="cubeImg m500-noDisplay">
 					<img src="/images/cube.png">
@@ -126,7 +157,6 @@
 			</div>
 
 			<div class="flex flexRow alignStart justifyBetween width100">
-
 				<div class="cubeLargeImg flex width40 m-noDisplay">
 					<img src="/images/cube-large.png">
 				</div>
@@ -136,61 +166,56 @@
 
 					<div class="aboutCounter flex flexRow width100 justifyStart m-gap50 m-justifyCenter">
 						<div class="flex flexCol width10 marginR30">
-							<h1 class="medium">
+							<span class="fontSize40 medium">
 								20<span class="redText">+</span>
-							</h1>
+							</span>
 
 							<p class="light textCenter lineH11">Completed Projects</p>
 						</div>
 
 						<div class="flex flexCol width10">
-							<h1 class="medium">
+							<span class="fontSize40 medium">
 								3<span class="redText">+</span>
-							</h1>
+							</span>
 
 							<p class="light textCenter lineH11">Years Experience</p>
 						</div>
 					</div>
 				</div>
-
 			</div>
-
 		</div>
-
 	</div>
 
 
 
 	<div class="containerBlock flex">
-
 		<div class="container flex flexCol">
-
-			<h1 class="heading disRegular width100">My Works</h1>
+			<h2 class="heading disRegular width100">My Works</h2>
 
 			<div class="flex flexRow justifyBetween alignStart width100 marginT10 marginB50 m-marginB30">
-				<h1 class="subHeading regular width50 m500-width100">Some of my finished and ongoing projects,</h1>
+				<h3 class="subHeading regular width50 m500-width100">Some of my finished and ongoing projects,</h3>
 
 				<div class="cubeImg m500-noDisplay">
 					<img src="/images/cube.png">
 				</div>
 			</div>
 
-			<div class="flex flexCol gap15 width100">
+			<div class="grid gridCol2 m-gridCol2 m500-gridCol1 gap15 width100 marginB50">
 				<a class="flex width100" href="https://github.com/sandunwira/NovaWeb" target="_blank">
 					<div class="linkCard flex justifyBetween width100">
 						<div class="linkLogo flex m500-noDisplay">
 							<img src="https://i.postimg.cc/9Mkxjp13/nova.png">
 						</div>
 
-						<div class="flex textLeft width80 m-width60">
-							<h1 class="regular width100">Nova Assistant</h1>
+						<div class="flex textLeft width60 m-width60">
+							<h4 class="regular width100">Nova Assistant</h4>
 						</div>
 
-						<div class="flex textLeft width20 m-width40">
-							<h2 class="light textRight width100">
-								<span class="marginR5 m500-noDisplay">View Project</span>
+						<div class="flex textLeft width40 m-width40">
+							<h5 class="light textRight width100">
+								<span class="marginR5 m-noDisplay m500-noDisplay">View Project</span>
 								<i class="fa-solid fa-square-arrow-up-right"></i>
-							</h2>
+							</h5>
 						</div>
 					</div>
 				</a>
@@ -201,15 +226,15 @@
 							<img src="https://i.postimg.cc/Ss4bCN77/suptube.png">
 						</div>
 
-						<div class="flex textLeft width80 m-width60">
-							<h1 class="regular width100">SupTube</h1>
+						<div class="flex textLeft width60 m-width60">
+							<h4 class="regular width100">SupTube</h4>
 						</div>
 
-						<div class="flex textLeft width20 m-width40">
-							<h2 class="light textRight width100">
-								<span class="marginR5 m500-noDisplay">View Project</span>
+						<div class="flex textLeft width40 m-width40">
+							<h5 class="light textRight width100">
+								<span class="marginR5 m-noDisplay m500-noDisplay">View Project</span>
 								<i class="fa-solid fa-square-arrow-up-right"></i>
-							</h2>
+							</h5>
 						</div>
 					</div>
 				</a>
@@ -220,34 +245,34 @@
 							<img src="https://i.postimg.cc/hGZ8J1w2/chroma.png">
 						</div>
 
-						<div class="flex textLeft width80 m-width60">
-							<h1 class="regular width100">Chroma</h1>
+						<div class="flex textLeft width60 m-width60">
+							<h4 class="regular width100">Chroma</h4>
 						</div>
 
-						<div class="flex textLeft width20 m-width40">
-							<h2 class="light textRight width100">
-								<span class="marginR5 m500-noDisplay">View Project</span>
+						<div class="flex textLeft width40 m-width40">
+							<h5 class="light textRight width100">
+								<span class="marginR5 m-noDisplay m500-noDisplay">View Project</span>
 								<i class="fa-solid fa-square-arrow-up-right"></i>
-							</h2>
+							</h5>
 						</div>
 					</div>
 				</a>
 
-				<a class="flex marginB40 width100" href="https://github.com/sandunwira/PixelPlayer" target="_blank">
+				<a class="flex width100" href="https://github.com/sandunwira/PixelPlayer" target="_blank">
 					<div class="linkCard flex justifyBetween width100">
 						<div class="linkLogo flex m500-noDisplay">
 							<img src="https://i.postimg.cc/pX8tq0Jn/pixelplayer.png">
 						</div>
 
-						<div class="flex textLeft width80 m-width60">
-							<h1 class="regular width100">PixelPlayer</h1>
+						<div class="flex textLeft width60 m-width60">
+							<h4 class="regular width100">PixelPlayer</h4>
 						</div>
 
-						<div class="flex textLeft width20 m-width40">
-							<h2 class="light textRight width100">
-								<span class="marginR5 m500-noDisplay">View Project</span>
+						<div class="flex textLeft width40 m-width40">
+							<h5 class="light textRight width100">
+								<span class="marginR5 m-noDisplay m500-noDisplay">View Project</span>
 								<i class="fa-solid fa-square-arrow-up-right"></i>
-							</h2>
+							</h5>
 						</div>
 					</div>
 				</a>
@@ -258,21 +283,17 @@
 					<button class="flex flexRow alignCenter gap10 redBtn regular">View More On GitHub <i class="fa-solid fa-square-arrow-up-right"></i></button>
 				</a>
 			</div>
-
 		</div>
-
 	</div>
 
 
 
 	<div class="containerBlock flex">
-
 		<div class="container flex flexCol">
-
-			<h1 class="heading disRegular width100">My Services</h1>
+			<h2 class="heading disRegular width100">My Services</h2>
 
 			<div class="flex flexRow justifyBetween alignStart width100 marginT10 marginB50 m-marginB30">
-				<h1 class="subHeading regular width50 m500-width100">Available services that I can and will work on,</h1>
+				<h3 class="subHeading regular width50 m500-width100">Available services that I can and will work on,</h3>
 
 				<div class="cubeImg m500-noDisplay">
 					<img src="/images/cube.png">
@@ -280,11 +301,11 @@
 			</div>
 
 			<div class="flex flexCol gap15 width100">
-
 				<details class="serviceLink flex width100">
 					<summary class="serviceCard flex justifyBetween">
 						UI/UX Design <i class="fa-solid fa-chevron-down"></i>
 					</summary>
+
 					<div class="serviceDesc">
 						<ul>
 							<li>Visual Design</li>
@@ -300,6 +321,7 @@
 					<summary class="serviceCard flex justifyBetween">
 						Web Development (Frontend) <i class="fa-solid fa-chevron-down"></i>
 					</summary>
+
 					<div class="serviceDesc">
 						<ul>
 							<li>Designing</li>
@@ -316,6 +338,7 @@
 					<summary class="serviceCard flex justifyBetween">
 						Web Development (Fullstack) <i class="fa-solid fa-chevron-down"></i>
 					</summary>
+
 					<div class="serviceDesc">
 						<ul>
 							<li>Designing</li>
@@ -332,6 +355,7 @@
 					<summary class="serviceCard flex justifyBetween">
 						Website Optimization and SEO <i class="fa-solid fa-chevron-down"></i>
 					</summary>
+
 					<div class="serviceDesc">
 						<ul>
 							<li>Search Engine Optimization (SEO)</li>
@@ -347,6 +371,7 @@
 					<summary class="serviceCard flex justifyBetween">
 						Chatbot Integration <i class="fa-solid fa-chevron-down"></i>
 					</summary>
+
 					<div class="serviceDesc">
 						<ul>
 							<li>Conversational Chatbots</li>
@@ -360,6 +385,7 @@
 					<summary class="serviceCard flex justifyBetween">
 						Native Windows Applications <i class="fa-solid fa-chevron-down"></i>
 					</summary>
+
 					<div class="serviceDesc">
 						<ul>
 							<li>Tauri Applications</li>
@@ -372,6 +398,7 @@
 					<summary class="serviceCard flex justifyBetween">
 						Graphic Design <i class="fa-solid fa-chevron-down"></i>
 					</summary>
+
 					<div class="serviceDesc">
 						<ul>
 							<li>Logo Design</li>
@@ -383,21 +410,17 @@
 					</div>
 				</details>
 			</div>
-
 		</div>
-
 	</div>
 
 
 
 	<div class="containerBlock flex" id="resume">
-
 		<div class="container flex flexCol">
-
-			<h1 class="heading disRegular width100">Resume</h1>
+			<h2 class="heading disRegular width100">Resume</h2>
 
 			<div class="flex flexRow justifyBetween alignStart width100 marginT10 marginB50 m-marginB30">
-				<h1 class="subHeading regular width50 m500-width100">Want to check on my skills? Check out my resume,</h1>
+				<h3 class="subHeading regular width50 m500-width100">Want to check on my skills? Check out my resume,</h3>
 
 				<div class="cubeImg m500-noDisplay">
 					<img src="/images/cube.png">
@@ -405,24 +428,20 @@
 			</div>
 
 			<div class="flex flexRow justifyStart gap30 m-gap15 width100 marginB50 m-marginB30">
-				<button class="redBtn regular" onclick="window.open('/cv.pdf')">View Online</button>
+				<a class="redLinkBtn flex flexRow alignCenter gap10 redBtn regular" href="/cv.pdf" target="_blank">View Online</a>
 				<button class="flex flexRow alignCenter gap10 redBtn regular" onclick="downloadCV();">Download <i class="fa-solid fa-file-arrow-down"></i></button>
 			</div>
-
 		</div>
-
 	</div>
 
 
 
 	<div class="containerBlock flex" id="contact">
-
 		<div class="container flex flexCol">
-
-			<h1 class="heading disRegular width100">Contact Me</h1>
+			<h2 class="heading disRegular width100">Contact Me</h2>
 
 			<div class="flex flexRow justifyBetween alignStart width100 marginT10 marginB50 m-marginB30">
-				<h1 class="subHeading regular width50 m500-width100">Want to collaborate with me for your next project?</h1>
+				<h3 class="subHeading regular width50 m500-width100">Want to collaborate with me for your next project?</h3>
 
 				<div class="cubeImg m500-noDisplay">
 					<img src="/images/cube.png">
@@ -430,14 +449,12 @@
 			</div>
 
 			<div class="formBox flex flexRow m-flexCol width100 marginB50 m-marginB30">
-
 				<div class="formImage flex height100 width30 m-noDisplay">
 					<img src="https://i.postimg.cc/pr80WsTD/form-Image.png">
 				</div>
 
 				<div class="formContent flex flexCol height100 width70 m-width100">
 					<form id="messageForm" class="flex flexCol justifyStart alignStart height90 width90 gap30" method="POST" action="https://script.google.com/macros/s/AKfycbzCJEd54wcgiHwnFyGTArUB6rv-FjxtjvyUvGAZ0759oFohuaiDbhBSy7jimqxW7ubB/exec">
-
 						<div class="flex flexCol alignStart width100 m-width95 gap05">
 							<label for="name" class="light">Full Name:</label>
 							<input type="text" class="light" id="name" name="Full Name" placeholder="Enter Your Full Name" title="Enter Your Full Name" required>
@@ -457,114 +474,28 @@
 							<button class="redBtn regular" id="contactSubmitBtn" type="submit">Submit</button>
 							<span class="flex flexRow alignCenter gap10" id="formStatus"></span>
 						</div>
-
 					</form>
 				</div>
-
 			</div>
-
 		</div>
-
 	</div>
 
 
 
 	<div class="containerBlock flex">
-
 		<div class="container flex flexCol">
-
-			<h1 class="heading disRegular width100">Follow Me</h1>
+			<h2 class="heading disRegular width100">Follow Me</h2>
 
 			<div class="flex flexRow justifyBetween alignStart width100 marginT10 marginB50 m-marginB30">
-				<h1 class="subHeading regular width50 m500-width100">Get the latest information about my projects,</h1>
+				<h3 class="subHeading regular width50 m500-width100">Get the latest information about my projects,</h3>
 
 				<div class="cubeImg m500-noDisplay">
 					<img src="/images/cube.png">
 				</div>
 			</div>
 
-			<div class="flex flexCol width100 gap25 m-gap20 marginB50">
-
-				<div class="flex flexRow width100 justifyBetween m-flexCol m-gap20">
-					<a class="flex width30 m-width100" href="mailto:sandun.wira@outlook.com" target="_blank">
-						<div class="socialCard flex justifyBetween width100" id="mailLink">
-							<i class="fa-solid fa-envelope"></i>
-
-							<div class="flex textLeft width80">
-								<h1 class="regular width100">Email</h1>
-							</div>
-
-							<i class="fa-solid fa-square-arrow-up-right"></i>
-						</div>
-					</a>
-
-					<a class="flex width30 m-width100" href="https://github.com/sandunwira" target="_blank">
-						<div class="socialCard flex justifyBetween width100" id="ghLink">
-							<i class="fa-brands fa-github-alt"></i>
-
-							<div class="flex textLeft width80">
-								<h1 class="regular width100">GitHub</h1>
-							</div>
-
-							<i class="fa-solid fa-square-arrow-up-right"></i>
-						</div>
-					</a>
-
-					<a class="flex width30 m-width100" href="https://www.linkedin.com/in/sandunwira" target="_blank">
-						<div class="socialCard flex justifyBetween width100" id="linLink">
-							<i class="fa-brands fa-linkedin-in"></i>
-
-							<div class="flex textLeft width80">
-								<h1 class="regular width100">LinkedIn</h1>
-							</div>
-
-							<i class="fa-solid fa-square-arrow-up-right"></i>
-						</div>
-					</a>
-				</div>
-
-				<div class="flex flexRow width100 justifyBetween m-flexCol m-gap20">
-					<a class="flex width30 m-width100" href="https://www.twitch.tv/mahazona" target="_blank">
-						<div class="socialCard flex justifyBetween width100" id="twtvLink">
-							<i class="fa-brands fa-twitch"></i>
-
-							<div class="flex textLeft width80">
-								<h1 class="regular width100">Twitch</h1>
-							</div>
-
-							<i class="fa-solid fa-square-arrow-up-right"></i>
-						</div>
-					</a>
-
-					<a class="flex width30 m-width100" href="https://www.youtube.com/@sandunwira" target="_blank">
-						<div class="socialCard flex justifyBetween width100" id="ytLink">
-							<i class="fa-brands fa-youtube"></i>
-
-							<div class="flex textLeft width80">
-								<h1 class="regular width100">YouTube</h1>
-							</div>
-
-							<i class="fa-solid fa-square-arrow-up-right"></i>
-						</div>
-					</a>
-
-					<a class="flex width30 m-width100" href="https://open.spotify.com/artist/0EeC5w9rgOIUQYNRM3TzwR" target="_blank">
-						<div class="socialCard flex justifyBetween width100" id="spotifyLink">
-							<i class="fa-brands fa-spotify"></i>
-
-							<div class="flex textLeft width80">
-								<h1 class="regular width100">Spotify</h1>
-							</div>
-
-							<i class="fa-solid fa-square-arrow-up-right"></i>
-						</div>
-					</a>
-				</div>
-
-			</div>
-
+			<div class="width100 grid gridCol3 m-gridCol2 m500-gridCol1 gap25 marginB50" id="socialsGrid"></div>
 		</div>
-
 	</div>
 
 
@@ -578,10 +509,6 @@
 	<!-- SCROLL-TO-TOP START ===========================================================-->
 	<button id="toTopBtn" class="flex redBtn"><i class="fa-solid fa-chevron-up"></i></button>
 	<!--============================================================= SCROLL-TO-TOP END -->
-
-
-
-	<script src="/script.js"></script>
 
 </body>
 

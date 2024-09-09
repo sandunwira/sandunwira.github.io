@@ -64,7 +64,27 @@
 		width: 100%;
 	}
 
+	.m500-gridCol1{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.m500-gridCol2{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.m500-gridCol3{
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.m500-gridCol4{
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.m500-gridCol5{
+		grid-template-columns: repeat(5, 1fr);
+	}
+
+
 	.headerHeading {
+		font-size: 55px;
+	}
+	.subheaderHeading {
 		font-size: 55px;
 	}
 
@@ -72,17 +92,55 @@
 		font-size: 24px;
 	}
 
+	.filterLinks {
+		white-space: nowrap;
+		overflow: auto;
+		padding-bottom: 10px;
+	}
+
 }
 
 
 @media (min-width: 500px) and (max-width: 1048px) {
 
+	.m-noDisplay{
+		display: none;
+	}
+
 	.headerHeading {
 		font-size: 70px;
 	}
+	.subheaderHeading {
+		font-size: 60px;
+	}
+
+	.m-grid{
+		display: grid;
+	}
+	.m-gridCol{
+		grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+	}
+	.m-gridRow{
+		grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+	}
+	.m-gridCol1{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.m-gridCol2{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.m-gridCol3{
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.m-gridCol4{
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.m-gridCol5{
+		grid-template-columns: repeat(5, 1fr);
+	}
 
 	.linkCard h2{
-		font-size: 14px;
+		font-size: 24px;
 	}
 
 }
@@ -104,6 +162,9 @@
 		justify-content: center;
 	}
 
+	.m-gap0{
+		gap: 0px;
+	}
 	.m-gap5{
 		gap: 5px;
 	}
@@ -383,6 +444,66 @@
 		margin: 100px;
 	}
 
+	.m-marginB-5{
+		margin-bottom: -5px;
+	}
+	.m-marginB-10{
+		margin-bottom: -10px;
+	}
+	.m-marginB-15{
+		margin-bottom: -15px;
+	}
+	.m-marginB-20{
+		margin-bottom: -20px;
+	}
+	.m-marginB-25{
+		margin-bottom: -25px;
+	}
+	.m-marginB-30{
+		margin-bottom: -30px;
+	}
+	.m-marginB-35{
+		margin-bottom: -35px;
+	}
+	.m-marginB-40{
+		margin-bottom: -40px;
+	}
+	.m-marginB-45{
+		margin-bottom: -45px;
+	}
+	.m-marginB-50{
+		margin-bottom: -50px;
+	}
+	.m-marginB-55{
+		margin-bottom: -55px;
+	}
+	.m-marginB-60{
+		margin-bottom: -60px;
+	}
+	.m-marginB-65{
+		margin-bottom: -65px;
+	}
+	.m-marginB-70{
+		margin-bottom: -70px;
+	}
+	.m-marginB-75{
+		margin-bottom: -75px;
+	}
+	.m-marginB-80{
+		margin-bottom: -80px;
+	}
+	.m-marginB-85{
+		margin-bottom: -85px;
+	}
+	.m-marginB-90{
+		margin-bottom: -90px;
+	}
+	.m-marginB-95{
+		margin-bottom: -95px;
+	}
+	.m-marginB-100{
+		margin-bottom: -100px;
+	}
 	.m-marginB5{
 		margin-bottom: 5px;
 	}
@@ -723,7 +844,7 @@
 	}
 
 
-	header{
+	.header{
 		background: linear-gradient(#16161682, #161616D9, #161616), url('https://i.postimg.cc/rsTCqMt9/propic.webp');
 		background-size: cover;
 	}
