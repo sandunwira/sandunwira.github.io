@@ -1024,13 +1024,25 @@ form textarea:focus{
 
 
 
-.portfolioCard a{
+.portfolioCard .portfolioCardAppsLink{
 	color: var(--accent);
 	transition: 0.3s;
 }
-.portfolioCard a:hover{
+.portfolioCard .portfolioCardAppsLink:hover{
 	color: var(--white);
 	transition: 0.3s;
+}
+
+.portfolioCardArtworksLink{
+	opacity: 0;
+	color: var(--white);
+	background: #E73636E0;
+	border-radius: 10px;
+	transition: 0.2s;
+}
+.portfolioCard:hover .portfolioCardArtworksLink{
+	opacity: 1;
+	transition: 0.2s;
 }
 
 

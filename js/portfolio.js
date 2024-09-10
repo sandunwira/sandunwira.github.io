@@ -66,7 +66,7 @@ filterApps.addEventListener('click', () => {
 					<div class="portfolioCardImg width100" style="height: 200px; border-radius: 10px 10px 0px 0px; background: url('${app.img}'); background-size: cover; background-position: center;"></div>
 					<div class="portfolioCardInfo width80 flex flexCol alignStart gap10">
 						<div class="width100 flex flexRow justifyBetween">
-							<a href="${app.link}" class="fontSize14 light" target="_blank" title="More on project ${app.name}">
+							<a href="${app.link}" class="portfolioCardAppsLink fontSize14 light" target="_blank" title="More on project ${app.name}">
 								<h4 class="fontSize20">${app.name} <i class="fa-solid fa-square-arrow-up-right"></i></h4>
 							</a>
 						</div>
@@ -100,8 +100,15 @@ filterArtworks.addEventListener('click', () => {
 		.then(artworks => {
 			artworks.forEach(artwork => {
 				const portfolioCard = document.createElement('div');
-				portfolioCard.classList.add('portfolioCard', 'width100', 'flex', 'alignCenter', 'justifyCenter');
-				portfolioCard.style = `aspect-ratio: 1/1; background: url('${artwork.img}'), var(--grey); background-size: contain; background-position: center; background-repeat: no-repeat; border-radius: 10px;`;
+				portfolioCard.classList.add('portfolioCard', 'width100', 'flex', 'flexCol', 'alignCenter', 'justifyCenter', 'gap20');
+				portfolioCard.style = `aspect-ratio: 1/1; border-radius: 10px; background: url('${artwork.img}'), #404040; background-size: contain; background-repeat: no-repeat; background-position: center;`;
+				if (artwork.featured === true) {
+					portfolioCard.innerHTML = `
+						<a class="portfolioCardArtworksLink medium textUpperCase flex flexRow alignCenter justifyCenter width100 gap05" style="aspect-ratio: 1/1;" href="${artwork.link}" target="_blank">${artwork.platform} <i class="fa-solid fa-square-arrow-up-right"></i></a>
+					`;
+				} else if (artwork.featured === false) {
+					portfolioCard.innerHTML = '';
+				}
 				portfolioGrid.appendChild(portfolioCard);
 			});
 		})

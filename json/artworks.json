@@ -1,178 +1,303 @@
 [
 	{
 		"id": 1,
-		"img": "/images/artworks/dd1.webp"
+		"img": "/images/artworks/dd1.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/photo.php?fbid=930725082389976",
+		"platform": "Facebook"
 	},
 	{
 		"id": 2,
-		"img": "/images/artworks/dd2.webp"
+		"img": "/images/artworks/dd2.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/photo.php?fbid=927804679348683",
+		"platform": "Facebook"
 	},
 	{
 		"id": 3,
-		"img": "/images/artworks/dd3.webp"
+		"img": "/images/artworks/dd3.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/photo.php?fbid=940215571440927",
+		"platform": "Facebook"
 	},
 	{
 		"id": 4,
-		"img": "/images/artworks/dd4.webp"
+		"img": "/images/artworks/dd4.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/photo.php?fbid=963389342456883",
+		"platform": "Facebook"
 	},
 	{
 		"id": 5,
-		"img": "/images/artworks/dd5.webp"
+		"img": "/images/artworks/dd5.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/photo.php?fbid=968565628605921",
+		"platform": "Facebook"
 	},
 	{
 		"id": 6,
-		"img": "/images/artworks/dd6.webp"
+		"img": "/images/artworks/dd6.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/photo.php?fbid=973312821464535",
+		"platform": "Facebook"
 	},
 	{
 		"id": 7,
-		"img": "/images/artworks/dd7.webp"
+		"img": "/images/artworks/dd7.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/photo.php?fbid=976074574521693",
+		"platform": "Facebook"
 	},
 	{
 		"id": 8,
-		"img": "/images/artworks/dd8.webp"
+		"img": "/images/artworks/dd8.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/photo.php?fbid=980767040719113",
+		"platform": "Facebook"
 	},
 	{
 		"id": 9,
-		"img": "/images/artworks/dd9.webp"
+		"img": "/images/artworks/dd9.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/photo.php?fbid=983851787077305",
+		"platform": "Facebook"
 	},
 	{
 		"id": 10,
-		"img": "/images/artworks/dd10.webp"
+		"img": "/images/artworks/dd10.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/photo.php?fbid=987472773381873",
+		"platform": "Facebook"
 	},
 	{
 		"id": 11,
-		"img": "/images/artworks/dd11.webp"
+		"img": "/images/artworks/dd11.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/photo.php?fbid=1001011138694703",
+		"platform": "Facebook"
 	},
 	{
 		"id": 12,
-		"img": "/images/artworks/dd12.webp"
+		"img": "/images/artworks/dd12.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/photo.php?fbid=1007275601401590",
+		"platform": "Facebook"
 	},
 	{
 		"id": 13,
-		"img": "/images/artworks/ddcover1.webp"
+		"img": "/images/artworks/ddcover1.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/yourhomefurniturelk/photos/pb.100064038911442.-2207520000/1396130624433834",
+		"platform": "Facebook"
 	},
 	{
 		"id": 14,
-		"img": "/images/artworks/lumina1.webp"
+		"img": "/images/artworks/lumina1.webp",
+		"featured": true,
+		"link": "https://www.linkedin.com/posts/sandunwira_windows-tauri-github-activity-7091015380135002112-WhAG",
+		"platform": "LinkedIn"
 	},
 	{
 		"id": 15,
-		"img": "/images/artworks/lumina2.webp"
+		"img": "/images/artworks/lumina2.webp",
+		"featured": true,
+		"link": "https://instagram.com/sandunwira",
+		"platform": "Instagram"
 	},
 	{
 		"id": 16,
-		"img": "/images/artworks/msi1.webp"
+		"img": "/images/artworks/msi1.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/photo.php?fbid=643852723771067",
+		"platform": "Facebook"
 	},
 	{
 		"id": 17,
-		"img": "/images/artworks/sjc1.webp"
+		"img": "/images/artworks/sjc1.webp",
+		"featured": true,
+		"link": "https://www.linkedin.com/posts/sandunwira_design-development-project-activity-7052390936827346945-TgDM",
+		"platform": "LinkedIn"
 	},
 	{
 		"id": 18,
-		"img": "/images/artworks/sjc2.webp"
+		"img": "/images/artworks/sjc2.webp",
+		"featured": true,
+		"link": "https://sjccolombo.onrender.com",
+		"platform": "SJCColombo"
 	},
 	{
 		"id": 19,
-		"img": "/images/artworks/suptube1.webp"
+		"img": "/images/artworks/suptube1.webp",
+		"featured": true,
+		"link": "https://www.linkedin.com/posts/sandunwira_windows-tauri-github-activity-7053385439440764928-g5Q0",
+		"platform": "LinkedIn"
 	},
 	{
 		"id": 20,
-		"img": "/images/artworks/suptube2.webp"
+		"img": "/images/artworks/suptube2.webp",
+		"featured": true,
+		"link": "https://github.com/sandunwira/SupTube",
+		"platform": "GitHub"
 	},
 	{
 		"id": 21,
-		"img": "/images/artworks/suptube3.webp"
+		"img": "/images/artworks/suptube3.webp",
+		"featured": true,
+		"link": "https://github.com/sandunwira/SupTube/releases/tag/1.3.0",
+		"platform": "GitHub"
 	},
 	{
 		"id": 22,
-		"img": "/images/artworks/tm1.webp"
+		"img": "/images/artworks/tm1.webp",
+		"featured": false,
+		"link": "",
+		"platform": ""
 	},
 	{
 		"id": 23,
-		"img": "/images/artworks/tm2.webp"
+		"img": "/images/artworks/tm2.webp",
+		"featured": false,
+		"link": "",
+		"platform": ""
 	},
 	{
 		"id": 24,
-		"img": "/images/artworks/tm3.webp"
+		"img": "/images/artworks/tm3.webp",
+		"featured": true,
+		"link": "https://ts.techmorph.lk",
+		"platform": "Teamspeak"
 	},
 	{
 		"id": 25,
-		"img": "/images/artworks/tm4.webp"
+		"img": "/images/artworks/tm4.webp",
+		"featured": true,
+		"link": "https://ts.techmorph.lk",
+		"platform": "Teamspeak"
 	},
 	{
 		"id": 26,
-		"img": "/images/artworks/tm5.webp"
+		"img": "/images/artworks/tm5.webp",
+		"featured": false,
+		"link": "",
+		"platform": ""
 	},
 	{
 		"id": 27,
-		"img": "/images/artworks/tm6.webp"
+		"img": "/images/artworks/tm6.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/photo.php?fbid=642464320576574",
+		"platform": "Facebook"
 	},
 	{
 		"id": 28,
-		"img": "/images/artworks/twitch1.webp"
+		"img": "/images/artworks/twitch1.webp",
+		"featured": true,
+		"link": "https://www.twitch.tv/mahazona",
+		"platform": "Twitch"
 	},
 	{
 		"id": 29,
-		"img": "/images/artworks/twitch2.webp"
+		"img": "/images/artworks/twitch2.webp",
+		"featured": true,
+		"link": "https://www.twitch.tv/mahazona",
+		"platform": "Twitch"
 	},
 	{
 		"id": 30,
-		"img": "/images/artworks/yhf1.webp"
+		"img": "/images/artworks/twitchbox1.webp",
+		"featured": true,
+		"link": "https://www.linkedin.com/posts/sandunwira_windows-tauri-github-activity-7053385439440764928-g5Q0",
+		"platform": "LinkedIn"
 	},
 	{
 		"id": 31,
-		"img": "/images/artworks/yhf2.webp"
+		"img": "/images/artworks/twitchbox2.webp",
+		"featured": true,
+		"link": "https://github.com/sandunwira/TwitchBox",
+		"platform": "GitHub"
 	},
 	{
 		"id": 32,
-		"img": "/images/artworks/yhf3.webp"
+		"img": "/images/artworks/yhf1.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/photo.php?fbid=875385151272774",
+		"platform": "Facebook"
 	},
 	{
 		"id": 33,
-		"img": "/images/artworks/yhf4.webp"
+		"img": "/images/artworks/yhf2.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/photo.php?fbid=872309408247015",
+		"platform": "Facebook"
 	},
 	{
 		"id": 34,
-		"img": "/images/artworks/yhf5.webp"
+		"img": "/images/artworks/yhf3.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/photo.php?fbid=860524122758877",
+		"platform": "Facebook"
 	},
 	{
 		"id": 35,
-		"img": "/images/artworks/yhf6.webp"
+		"img": "/images/artworks/yhf4.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/photo.php?fbid=856110086533614",
+		"platform": "Facebook"
 	},
 	{
 		"id": 36,
-		"img": "/images/artworks/yhf7.webp"
+		"img": "/images/artworks/yhf5.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/photo.php?fbid=853345890143367",
+		"platform": "Facebook"
 	},
 	{
 		"id": 37,
-		"img": "/images/artworks/yhf8.webp"
+		"img": "/images/artworks/yhf6.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/photo.php?fbid=853345886810034",
+		"platform": "Facebook"
 	},
 	{
 		"id": 38,
-		"img": "/images/artworks/yhf9.webp"
+		"img": "/images/artworks/yhf7.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/photo.php?fbid=853345876810035",
+		"platform": "Facebook"
 	},
 	{
 		"id": 39,
-		"img": "/images/artworks/yhf10.webp"
+		"img": "/images/artworks/yhf8.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/photo.php?fbid=853345883476701",
+		"platform": "Facebook"
 	},
 	{
 		"id": 40,
-		"img": "/images/artworks/yhf11.webp"
+		"img": "/images/artworks/yhf9.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/photo.php?fbid=853345880143368",
+		"platform": "Facebook"
 	},
 	{
 		"id": 41,
-		"img": "/images/artworks/youtube1.webp"
+		"img": "/images/artworks/yhf10.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/photo.php?fbid=852669853544304",
+		"platform": "Facebook"
 	},
 	{
 		"id": 42,
-		"img": "/images/artworks/youtube2.webp"
+		"img": "/images/artworks/yhf11.webp",
+		"featured": true,
+		"link": "https://www.facebook.com/photo.php?fbid=830753425735947",
+		"platform": "Facebook"
 	},
 	{
 		"id": 43,
-		"img": "/images/artworks/twitchbox1.webp"
-	},
-	{
-		"id": 44,
-		"img": "/images/artworks/twitchbox2.webp"
+		"img": "/images/artworks/youtube1.webp",
+		"featured": true,
+		"link": "https://www.youtube.com/@mahazona",
+		"platform": "YouTube"
 	}
 ]
