@@ -1,6 +1,38 @@
 [
 	{
-		"id": 1,
-		"img": "/images/temp.webp"
+		"name": "SupTube",
+		"description": "Website of SupTube, an open-source Windows client for YouTube",
+		"img": "/images/uiux/1.webp",
+		"link": "https://www.behance.net/gallery/207669305/SupTube-Website"
+	},
+	{
+		"name": "GREEN",
+		"description": "GREEN is an e-commerce website for a supermarket with advanced features like online payment and shopping cart",
+		"img": "/images/uiux/2.webp",
+		"link": "https://www.behance.net/gallery/207653627/GREEN-Supermart"
+	},
+	{
+		"name": "My Website",
+		"description": "My personal website that I created to showcase my projects and skills",
+		"img": "/images/uiux/3.webp",
+		"link": "https://www.behance.net/gallery/207668935/My-Portfolio"
+	},
+	{
+		"name": "Synthia",
+		"description": "Synthia is a website for developing mindfullness and mental health",
+		"img": "/images/uiux/4.webp",
+		"link": "https://www.behance.net/gallery/207659685/Synthia"
+	},
+	{
+		"name": "Passforge",
+		"description": "Passforge is a secure password generator",
+		"img": "/images/uiux/5.webp",
+		"link": "https://www.behance.net/gallery/207659511/PassForge"
+	},
+	{
+		"name": "Syndate",
+		"description": "Syndate is a mobile application to find your perfect date",
+		"img": "/images/uiux/6.webp",
+		"link": "https://www.behance.net/gallery/207669763/Syndate"
 	}
 ]

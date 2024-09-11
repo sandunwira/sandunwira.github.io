@@ -34,5 +34,11 @@
 		"name": "Spotify",
 		"icon": "<i class=\"fa-brands fa-spotify\"></i>",
 		"link": "https://open.spotify.com/artist/0EeC5w9rgOIUQYNRM3TzwR"
+	},
+	{
+		"id": "behanceLink",
+		"name": "Behance",
+		"icon": "<i class=\"fa-brands fa-behance\"></i>",
+		"link": "https://www.behance.net/sandunwira"
 	}
 ]

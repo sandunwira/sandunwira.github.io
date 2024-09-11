@@ -909,6 +909,11 @@
 		background: #404040;
 		transition: 0.3s;
 	}
+	#behanceLink:hover{
+		color: var(--white);
+		background: #404040;
+		transition: 0.3s;
+	}
 
 	footer p{
 		font-size: 14px;

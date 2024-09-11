@@ -129,19 +129,31 @@ filterUIUX.addEventListener('click', () => {
 	filterArtworks.classList.add('light', 'opacity5');
 	portfolioGrid.innerHTML = '';
 	window.location.hash = 'uiux';
-	fetch('/json/ui.json')
+	fetch('/json/uiux.json')
 		.then(response => response.json())
 		.then(uiux => {
 			uiux.forEach(uiux => {
 				const portfolioCard = document.createElement('div');
-				portfolioCard.classList.add('portfolioCard', 'width100', 'flex', 'alignCenter', 'justifyCenter');
-				portfolioCard.style = `aspect-ratio: 1/1; background: url('${uiux.img}'), var(--grey); background-size: contain; background-position: center; background-repeat: no-repeat; border-radius: 10px;`;
+				portfolioCard.classList.add('portfolioCard', 'width100', 'flex', 'flexCol', 'justifyStart', 'gap20');
+				portfolioCard.style = 'background: var(--grey); border-radius: 10px;';
+				portfolioCard.innerHTML = `
+					<div class="portfolioCardImg width100" style="height: 200px; border-radius: 10px 10px 0px 0px; background: url('${uiux.img}'); background-size: cover; background-position: center;"></div>
+					<div class="portfolioCardInfo width80 flex flexCol alignStart gap10">
+						<div class="width100 flex flexRow justifyBetween">
+							<a href="${uiux.link}" class="portfolioCardUIUXLink fontSize14 light" target="_blank" title="More on ${uiux.name} Project">
+								<h4 class="fontSize20">${uiux.name} <i class="fa-solid fa-square-arrow-up-right"></i></h4>
+							</a>
+						</div>
+						<p class="fontSize14 light width100 marginB30">${uiux.description}</p>
+					</div>
+				`;
 				portfolioGrid.appendChild(portfolioCard);
 			});
 		})
 		.catch(error => {
 			portfolioGrid.innerHTML = '<p class="fontSize14 light">Coming Soon</p>';
-		});
+		}
+	);
 });
 
 
