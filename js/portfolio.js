@@ -15,7 +15,7 @@ filterWebsites.addEventListener('click', () => {
 	filterUIUX.classList.add('light', 'opacity5');
 	portfolioGrid.innerHTML = '';
 	window.location.hash = 'websites';
-	fetch('/json/website.json')
+	fetch('/json/websites.json')
 		.then(response => response.json())
 		.then(websites => {
 			websites.forEach(website => {
@@ -26,7 +26,7 @@ filterWebsites.addEventListener('click', () => {
 					<div class="portfolioCardImg width100" style="height: 200px; border-radius: 10px 10px 0px 0px; background: url('${website.img}'); background-size: cover; background-position: center;"></div>
 					<div class="portfolioCardInfo width80 flex flexCol alignStart gap10">
 						<div class="width100 flex flexRow justifyBetween">
-							<a href="${website.link}" class="fontSize14 light" target="_blank" title="More on ${website.name} Project">
+							<a href="${website.link}" class="portfolioCardWebsitesLink fontSize14 light" target="_blank" title="More on ${website.name} Project">
 								<h4 class="fontSize20">${website.name} <i class="fa-solid fa-square-arrow-up-right"></i></h4>
 							</a>
 						</div>

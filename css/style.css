@@ -774,9 +774,7 @@ nav .redLinkBtn{
 	height: 100vh;
 }
 .subheader{
-	height: 70vh;
-	height: 70dvh;
-	height: 70vh;
+	height: 380px;
 	background: linear-gradient(#161616F0, #161616F0), url('https://i.postimg.cc/fW1PK5d9/subheader.webp');
 	background-size: cover;
 	background-position: center;
@@ -1024,6 +1022,15 @@ form textarea:focus{
 
 
 
+.portfolioCard .portfolioCardWebsitesLink{
+	color: var(--accent);
+	transition: 0.3s;
+}
+.portfolioCard .portfolioCardWebsitesLink:hover{
+	color: var(--white);
+	transition: 0.3s;
+}
+
 .portfolioCard .portfolioCardAppsLink{
 	color: var(--accent);
 	transition: 0.3s;
@@ -1048,7 +1055,7 @@ form textarea:focus{
 
 
 #toTopBtn{
-	display: none;
+	opacity: 0;
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
@@ -1058,6 +1065,7 @@ form textarea:focus{
 	height: 45px;
 	border-radius: 10px;
 	padding: 0;
+	transition: 0.2s;
 }
 
 

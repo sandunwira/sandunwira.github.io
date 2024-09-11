@@ -55,9 +55,11 @@ window.onscroll = function () {
 
 function scrollFunction() {
 	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		scrollToTopBtn.style.display = "flex";
+		scrollToTopBtn.style.opacity = "1";
+		scrollToTopBtn.style.transition = "0.2s";
 	} else {
-		scrollToTopBtn.style.display = "none";
+		scrollToTopBtn.style.opacity = "0";
+		scrollToTopBtn.style.transition = "0.2s";
 	}
 }
 

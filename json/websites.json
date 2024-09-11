@@ -1,9 +1,79 @@
 [
 	{
-		"name": "Website 1",
-		"description": "A website for a ... project",
-		"technologies": "HTML, CSS, JS",
-		"img": "/images/temp.webp",
-		"link": "https://github.com/sandunwira"
+		"name": "Helping Hands",
+		"description": "My first website that I created as an university assessment for a non-profit organization",
+		"technologies": "HTML, CSS, Google Maps API",
+		"img": "/images/websites/1.webp",
+		"link": "https://github.com/sandunwira/helpinghands"
+	},
+	{
+		"name": "Koo-Lo",
+		"description": "Koo-Lo is a website to show price comparisons from Amazon, eBay and AliExpress for a clothing item",
+		"technologies": "PHP, Node.js, Express.js, npm, HTML, CSS, JavaScript, JSON API, MySQL, GitHub, Replit, Figma",
+		"img": "/images/websites/2.webp",
+		"link": "https://github.com/sandunwira/koo-lo.com"
+	},
+	{
+		"name": "SupTube",
+		"description": "Website of SupTube, an open-source Windows client for YouTube",
+		"technologies": "HTML, CSS, JavaScript, Tailwind CSS, GitHub, Figma",
+		"img": "/images/websites/3.webp",
+		"link": "https://github.com/sandunwira/Suptube-Web"
+	},
+	{
+		"name": "TwitchBox",
+		"description": "Website of TwitchBox, an open-source Windows client for Twitch",
+		"technologies": "HTML, CSS, JavaScript, Tailwind CSS, GitHub, Figma",
+		"img": "/images/websites/4.webp",
+		"link": "https://github.com/sandunwira/TwitchBox-Web"
+	},
+	{
+		"name": "SJCColombo",
+		"description": "SJCColombo is an unofficial website for St. Joseph's College, Colombo 10",
+		"technologies": "HTML, CSS, JavaScript, Google Maps API, JSON API, GitHub",
+		"img": "/images/websites/5.webp",
+		"link": "https://github.com/sjccolombo/sjccolombo"
+	},
+	{
+		"name": "GREEN",
+		"description": "GREEN is an e-commerce website for a supermarket with advanced features like online payment and shopping cart",
+		"technologies": "Java with Maven, XAMPP, Apache Tomcat, JSP, HTML, CSS, JavaScript, PayPal API, MySQL, GitHub, Figma",
+		"img": "/images/websites/6.webp",
+		"link": "https://github.com/Green-Supermart/GREEN"
+	},
+	{
+		"name": "My Website",
+		"description": "My personal website that I created to showcase my projects and skills",
+		"technologies": "HTML, CSS, JavaScript, JSON API, GitHub Pages, Figma",
+		"img": "/images/websites/7.webp",
+		"link": "https://github.com/sandunwira/sandunwira.github.io"
+	},
+	{
+		"name": "Synthia",
+		"description": "Synthia is a website for developing mindfullness and mental health",
+		"technologies": "Node.js, Express.js, npm, HTML, CSS, JavaScript, JSON API, SQLite, GitHub, Figma",
+		"img": "/images/websites/8.webp",
+		"link": "https://github.com/Synthia-Org/website"
+	},
+	{
+		"name": "The Green Perch",
+		"description": "The Green Perch is a website that helps students to find accommodations near NSBM Green University",
+		"technologies": "PHP, Apache Tomcat, HTML, CSS, JavaScript, Google Maps API, JSON API, MySQL, GitHub, Figma",
+		"img": "/images/websites/9.webp",
+		"link": "https://github.com/TheGreenPerch/greenperch"
+	},
+	{
+		"name": "Fluxxy",
+		"description": "Fluxxy is a website for sending and receiving messages in real-time",
+		"technologies": "Node.js, Express.js, Socket.io npm, HTML, CSS, JavaScript",
+		"img": "/images/websites/10.webp",
+		"link": "https://github.com/sandunwira/fluxxy"
+	},
+	{
+		"name": "Fixumo",
+		"description": "Fixumo is a website for a pc repairing service based in Australia",
+		"technologies": "HTML, CSS, JavaScript, Google Maps API, GitHub",
+		"img": "/images/websites/11.webp",
+		"link": "https://fixumo.com"
 	}
 ]
