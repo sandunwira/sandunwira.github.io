@@ -75,5 +75,12 @@
 		"technologies": "HTML, CSS, JavaScript, Google Maps API, GitHub",
 		"img": "/images/websites/11.webp",
 		"link": "https://fixumo.com"
+	},
+	{
+		"name": "Nova",
+		"description": "Coming Soon",
+		"technologies": "Node.js, Express.js, npm, HTML, CSS, JavaScript, JSON, Figma",
+		"img": "/images/websites/nopreview.webp",
+		"link": "https://github.com/sandunwira/NovaWeb"
 	}
 ]

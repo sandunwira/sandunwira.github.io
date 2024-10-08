@@ -78,8 +78,8 @@
 	},
 	{
 		"name": "Nova",
-		"description": "A Windows 10 assistant project for replacement of Cortana",
-		"technologies": "Tauri, Rust, Cargo, npm, HTML, CSS, JavaScript, Rasa, Docker, Microsoft Azure",
+		"description": "Coming Soon",
+		"technologies": "Tauri, Rust, Cargo, npm, HTML, CSS, JavaScript, JSON, Figma",
 		"img": "/images/apps/apps-nopreview.webp",
 		"link": "https://github.com/sandunwira/NovaWeb"
 	}

@@ -26,7 +26,7 @@ filterWebsites.addEventListener('click', () => {
 					<div class="portfolioCardImg width100" style="height: 200px; border-radius: 10px 10px 0px 0px; background: url('${website.img}'); background-size: cover; background-position: center;"></div>
 					<div class="portfolioCardInfo width80 flex flexCol alignStart gap10">
 						<div class="width100 flex flexRow justifyBetween">
-							<a href="${website.link}" class="portfolioCardWebsitesLink fontSize14 light" target="_blank" title="More on ${website.name} Project">
+							<a href="${website.link}" class="portfolioCardWebsitesLink fontSize14 light" target="_blank" title="More on ${website.name}">
 								<h4 class="fontSize20">${website.name} <i class="fa-solid fa-square-arrow-up-right"></i></h4>
 							</a>
 						</div>
@@ -66,7 +66,7 @@ filterApps.addEventListener('click', () => {
 					<div class="portfolioCardImg width100" style="height: 200px; border-radius: 10px 10px 0px 0px; background: url('${app.img}'); background-size: cover; background-position: center;"></div>
 					<div class="portfolioCardInfo width80 flex flexCol alignStart gap10">
 						<div class="width100 flex flexRow justifyBetween">
-							<a href="${app.link}" class="portfolioCardAppsLink fontSize14 light" target="_blank" title="More on project ${app.name}">
+							<a href="${app.link}" class="portfolioCardAppsLink fontSize14 light" target="_blank" title="More on ${app.name}">
 								<h4 class="fontSize20">${app.name} <i class="fa-solid fa-square-arrow-up-right"></i></h4>
 							</a>
 						</div>
@@ -140,7 +140,7 @@ filterUIUX.addEventListener('click', () => {
 					<div class="portfolioCardImg width100" style="height: 200px; border-radius: 10px 10px 0px 0px; background: url('${uiux.img}'); background-size: cover; background-position: center;"></div>
 					<div class="portfolioCardInfo width80 flex flexCol alignStart gap10">
 						<div class="width100 flex flexRow justifyBetween">
-							<a href="${uiux.link}" class="portfolioCardUIUXLink fontSize14 light" target="_blank" title="More on ${uiux.name} Project">
+							<a href="${uiux.link}" class="portfolioCardUIUXLink fontSize14 light" target="_blank" title="More on ${uiux.name}">
 								<h4 class="fontSize20">${uiux.name} <i class="fa-solid fa-square-arrow-up-right"></i></h4>
 							</a>
 						</div>
