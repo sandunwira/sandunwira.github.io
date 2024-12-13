@@ -18,6 +18,12 @@
 		"link": "https://www.linkedin.com/in/sandunwira"
 	},
 	{
+		"id": "igLink",
+		"name": "Instagram",
+		"icon": "<i class=\"fa-brands fa-instagram\"></i>",
+		"link": "https://www.instagram.com/sandunwira"
+	},
+	{
 		"id": "twtvLink",
 		"name": "Twitch",
 		"icon": "<i class=\"fa-brands fa-twitch\"></i>",

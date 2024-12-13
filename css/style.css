@@ -12,6 +12,7 @@
 	--spotifyColor: #1DB954;
 	--twtvColor: #9146FF;
 	--linColor: #0A66C2;
+	--igColor: #FF0069;
 	--ghColor: #181717;
 	--behanceColor: #1769FF;
 }
@@ -1018,6 +1019,11 @@ form textarea:focus{
 #linLink:hover{
 	color: var(--white);
 	background: var(--linColor);
+	transition: 0.3s;
+}
+#igLink:hover{
+	color: var(--white);
+	background: var(--igColor);
 	transition: 0.3s;
 }
 #behanceLink:hover{
