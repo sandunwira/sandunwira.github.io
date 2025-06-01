@@ -874,6 +874,7 @@ nav .redLinkBtn{
 
 .serviceCard{
 	height: 60px;
+	width: calc(100% - 50px);
 	padding: 8px 25px;
 	border-radius: 10px;
 	background: var(--grey);
@@ -895,11 +896,17 @@ nav .redLinkBtn{
 	transition: 0s;
 }
 
+.serviceLink {
+	align-items: stretch;
+}
+
 .serviceDesc{
 	height: auto;
 	padding: 30px 25px;
 	border-radius: 0 0 10px 10px;
 	background: var(--grey);
+	width: 100%;
+	box-sizing: border-box;
 }
 .serviceDesc li{
 	list-style: none;
