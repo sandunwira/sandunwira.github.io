@@ -15,6 +15,7 @@
 	--igColor: #FF0069;
 	--ghColor: #181717;
 	--behanceColor: #1769FF;
+	--twitterColor: #000000;
 }
 
 *{
@@ -1036,6 +1037,11 @@ form textarea:focus{
 #behanceLink:hover{
 	color: var(--white);
 	background: var(--behanceColor);
+	transition: 0.3s;
+}
+#twitterLink:hover{
+	color: var(--white);
+	background: var(--twitterColor);
 	transition: 0.3s;
 }
 
