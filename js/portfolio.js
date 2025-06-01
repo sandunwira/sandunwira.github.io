@@ -18,7 +18,7 @@ filterWebsites.addEventListener('click', () => {
 	fetch('/json/websites.json')
 		.then(response => response.json())
 		.then(websites => {
-			websites.forEach(website => {
+			websites.slice().reverse().forEach(website => {
 				const portfolioCard = document.createElement('div');
 				portfolioCard.classList.add('portfolioCard', 'width100', 'flex', 'flexCol', 'justifyStart', 'gap20');
 				portfolioCard.style = 'background: var(--grey); border-radius: 10px;';
@@ -58,7 +58,7 @@ filterApps.addEventListener('click', () => {
 	fetch('/json/apps.json')
 		.then(response => response.json())
 		.then(apps => {
-			apps.forEach(app => {
+			apps.slice().reverse().forEach(app => {
 				const portfolioCard = document.createElement('div');
 				portfolioCard.classList.add('portfolioCard', 'width100', 'flex', 'flexCol', 'justifyStart', 'gap20');
 				portfolioCard.style = 'background: var(--grey); border-radius: 10px;';
@@ -98,7 +98,7 @@ filterArtworks.addEventListener('click', () => {
 	fetch('/json/artworks.json')
 		.then(response => response.json())
 		.then(artworks => {
-			artworks.forEach(artwork => {
+			artworks.slice().reverse().forEach(artwork => {
 				const portfolioCard = document.createElement('div');
 				portfolioCard.classList.add('portfolioCard', 'width100', 'flex', 'flexCol', 'alignCenter', 'justifyCenter', 'gap20');
 				portfolioCard.style = `aspect-ratio: 1/1; border-radius: 10px; background: url('${artwork.img}'), #404040; background-size: contain; background-repeat: no-repeat; background-position: center;`;
@@ -132,7 +132,7 @@ filterUIUX.addEventListener('click', () => {
 	fetch('/json/uiux.json')
 		.then(response => response.json())
 		.then(uiux => {
-			uiux.forEach(uiux => {
+			uiux.slice().reverse().forEach(uiux => {
 				const portfolioCard = document.createElement('div');
 				portfolioCard.classList.add('portfolioCard', 'width100', 'flex', 'flexCol', 'justifyStart', 'gap20');
 				portfolioCard.style = 'background: var(--grey); border-radius: 10px;';
